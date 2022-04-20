@@ -1,108 +1,184 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Earth day photo](https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F266010489%2F547435968885%2F1%2Foriginal.20220413-094345?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C680%2C340&s=b588be93ada495fed1aff7fe17875f7f)
 
-Welcome USER_NAME,
+# Mother Earth,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This is a website to inspire and empower humans to learn about saving the planet through sustainability, a quiz, donation to spport tree planting,tips on some extra resources.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
+![Mock-up of site](images/readme/amiresponsive.png)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Mother Earth has been developed as part of Code Institute's Hackathon
 
-`python3 -m http.server`
+Deployed website can be viewed [here]().
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+## Project Goals
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+## UX Design
 
-Another blue button should appear to click: _Open Browser_.
+### Site Owner Goals
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### User Stories
+- As a user, I want to understand the purpose of the site easily.
+- As a user, I want to navigate throughout the site easily and efficiently.
+- As a user, I want to experience responsive design, so I can use the site on different devices.
+- As a user, I want to find easy to understand content about sustainability
+- As a user, I want to write down how I am feeling and be able to clear it when finished. 
+- As a user, I want to enjoy simple and streamlined design that emulates the purpose of the site.
+- As a user, I want to enjoy images that reflect the aim of the site and convey the idea of a beatiful earth
+- As a user, I want to find social media links,
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### **Existing Features**
+* **Responsive design** - the site has been developed using Bootstrap and custom CSS to ensure the site is responsive across all devices.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
+* **Social media links** - In the footer there are links to various social media links.
+    ![Footer](images/readme/footer.png)
 
-## Release History
+* **About Page** - Gives users a good understanding of why the site exists and what its mission is.
+    ![About page](images/readme/about.png)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* **Login Page** - The login page has the front-end of login feature. This page is the base for future implementation of user-registrations.
+    ![Login page](images/readme/login.png)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### **Features Left to Implement**
+* Registration/Login - In the future users can register for an account and login.
+### Wireframes
+The wireframes for this project were developed using [Balsamiq](https://balsamiq.com/).
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+* **Desktop Wireframes:**
+        
+    ![Home page]() 
+    ![pop-up-wireframe]() 
+    ![About page]
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+* **Mobile Wireframes:**
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+     ![Mobile Home page]()  
+     ![Mobile About page]() 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Changes to Wireframes
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Colour Scheme
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+![Coolors Palette]()
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Images
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+The hero image on the home page is a beach scene. This was chosen to give an immediate sense of relief and relaxtion. 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Typography
 
-------
+ [Google Fonts](https://fonts.google.com/) was used to select the fonts.
 
-## FAQ about the uptime script
+## Technologies
 
-**Why have you added this script?**
+### Languages
+- HTML
+- CSS3
+- JavaScript
+- Python
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Frameworks and Libraries
+- hover css
+- animate.css
 
-**How will this affect me?**
+- [Am I Responsive?](http://ami.responsivedesign.is/) was used to create the mock ups.
+- [Balsamiq](https://balsamiq.com/) was used to create the wireframes.
+- [Bootstrap 5.1.3](https://getbootstrap.com/) was used to contribute to responsiveness and styling of the site.
+- [Font Awesome](https://fontawesome.com/) was used for the icons.
+- Git was used for version control ad to push code to GitHub.
+- [GitHub](https://github.com/) was used to store the repository.
+- [GitPod](https://www.gitpod.io/) was used as the IDE to develop the project.
+- [GitHub Projects]() was used to manage the workflow of the project.
+- [Google Fonts](https://fonts.google.com/) were used to select fonts for the site.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## Testing
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### [HTML Validator:](https://validator.w3.org/)
+*
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### [CSS Validator:](https://jigsaw.w3.org/css-validator/)
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### [JSHint:](https://jshint.com/)
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### [Python Syntax Checker PEP8](https://www.pythonchecker.com/)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
+### Lighthouse: 
+![Lighthouse]()
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## Bugs
 
----
 
-Happy coding!
+## Deployment
+
+The following steps were followed to deploy the project to a live website in GitHub, using Github Pages:
+
+- Ensure changes have been added and commited in Gitpod and pushed to GitHub.
+- Login to GitHub.
+- Locate the relevant repository on GitHub. This is the repository for...
+- At the top of the repository, locate the 'Settings' link and click on this.
+- On the left of the page, under Options, scroll down until you get to Pages and click on Pages.
+- Under Source, in the first box called "None", click the dropdown and select "master".
+- Then select Save.
+- The page will refresh and you will see a link above the Save button. This is the link to the live site. Note that it may take a few minutes for the site to be deployed.
+- There are no differences between the deployed version and the development version of this project.
+
+### Forking the GitHub Repository
+The repository can be forked on GitHub, this creates a copy of the repository that can be viewed or amended without affecting the original repository. This can be done using the following steps:
+
+- Login to GitHub and locate the repository as before.
+- At the top right of the repository (under your avatar) locate the Fork button and click this button.
+- There should now be a copy of the repository in your own GitHub account, which you can amend.
+
+### Cloning the GitHub Repository
+A clone of the repository can be made, which will create a local copy on your own computer. Changes can be made to this local copy and it will not affect the original repository. Follow these steps to clone the Sunrise Yoga repository.
+
+- Login to GitHub and locate the repository as before.
+- Click the button called "Code".
+- Under HTTPS copy the link provided, in this case ().
+- Go to Gitpod or whichever IDE you are using and open the Terminal.
+- Change the current working directory to the location where you want the cloned directory to be made.
+- Type 'git clone' followed by the url you copied in step 3.
+- Press "Enter" to create the local clone.
+- You can refer to the GitHub documentation for more detailed information on the above process [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
+
+## Credits
+
+### Content
+
+#### Website Content
+- Quotes  [david attenborough]()
+- Content regarding ways to save our planet modifed from several websites
+    
+#### Fonts
+- Fonts used are from [Google Fonts](https://fonts.google.com/)
+- Icons used are from [Font Awesome](https://fontawesome.com/)
+
+#### Code Content
+
+
+### Media
+
+#### Images
+* Hero image used from [Pexels]()
+* Logo and banner designed using: [freepik]()
+
+
+#### Audio
+
+
+
+## Acknowledegments:
+We thank [Code Institute](https://codeinstitute.net/se/5-day-coding-challenge/?utm_term=code%20institute&utm_campaign=CI+-+SWE+-+Search+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=14660337051&hsa_grp=134087657984&hsa_ad=546251838362&hsa_src=g&hsa_tgt=kwd-319867646331&hsa_kw=code%20institute&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQiArt6PBhCoARIsAMF5wajobw5RmzmDSvl-nqpJtRaVQKF-Znj4iDi1CR3oW-l9rBFnjMP_T1QaAvkOEALw_wcB) for organizing this Hackathon.
+* team members
+

@@ -1,13 +1,14 @@
-![Earth day photo](https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F266010489%2F547435968885%2F1%2Foriginal.20220413-094345?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C680%2C340&s=b588be93ada495fed1aff7fe17875f7f)
+![Theme: EARTH DAY 2022](https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F266010489%2F547435968885%2F1%2Foriginal.20220413-094345?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C680%2C340&s=b588be93ada495fed1aff7fe17875f7f)
 
-# Mother Earth,
+# Mother Earth
+* Theme: EARTH DAY 2022
 
-This is a website to inspire and empower humans to learn about saving the planet through sustainability, a quiz, donation to spport tree planting,tips on some extra resources.
+Mother Earth has been developed as part of Code Institute's April 2022 Hackathon to inspire and empower humans to learn about saving the planet through sustainability & raising awareness of environmental issues
+By raising self-awareness we can enable peole to reconnect to themselves ,reconnect to nature and truly comprehend humanity's impact on the planet by creating
+a quiz app feature, tree planting donation feature and some extra resources.
 
 
 ![Mock-up of site](images/readme/amiresponsive.png)
-
-Mother Earth has been developed as part of Code Institute's Hackathon
 
 Deployed website can be viewed [here]().
 
@@ -23,11 +24,10 @@ Deployed website can be viewed [here]().
 - As a user, I want to understand the purpose of the site easily.
 - As a user, I want to navigate throughout the site easily and efficiently.
 - As a user, I want to experience responsive design, so I can use the site on different devices.
-- As a user, I want to find easy to understand content about sustainability
-- As a user, I want to write down how I am feeling and be able to clear it when finished. 
+- As a user, I want to find easy to understand content about sustainability 
 - As a user, I want to enjoy simple and streamlined design that emulates the purpose of the site.
-- As a user, I want to enjoy images that reflect the aim of the site and convey the idea of a beatiful earth
-- As a user, I want to find social media links,
+- As a user, I want to enjoy images that reflect the aim of the site and convey the idea of a beautiful earth
+- As a user, I want to find social media links so i can easily reach out to the company for any queries.
 
 
 ### **Existing Features**
@@ -180,5 +180,6 @@ A clone of the repository can be made, which will create a local copy on your ow
 
 ## Acknowledegments:
 We thank [Code Institute](https://codeinstitute.net/se/5-day-coding-challenge/?utm_term=code%20institute&utm_campaign=CI+-+SWE+-+Search+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=14660337051&hsa_grp=134087657984&hsa_ad=546251838362&hsa_src=g&hsa_tgt=kwd-319867646331&hsa_kw=code%20institute&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQiArt6PBhCoARIsAMF5wajobw5RmzmDSvl-nqpJtRaVQKF-Znj4iDi1CR3oW-l9rBFnjMP_T1QaAvkOEALw_wcB) for organizing this Hackathon.
-* team members
+* Team members
+*  our Facilitator
 

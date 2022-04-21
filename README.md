@@ -2,7 +2,7 @@
 
 # Mother Earth
  Mother Earth has been developed as part of Code Institute's April 2022 Hackathon.
-Mother earth helps you plan for a more sustainable future in a playful way through simple tips and isometric illustrations.
+Mother earth helps you plan for a more sustainable future in a playful way through simple tips, quiz, events, rewards.
 By raising self-awareness we can enable peole to reconnect to themselves ,reconnect to nature and truly comprehend humanity's impact on the planet by creating
 a quiz app feature, tree planting donation feature and some extra resources.
 The team members for this project were: Nigel Doberer, Salwin Achankunju_5P, Yusuf F, Jochen Mayer, Eugenia Muscat & Sandra Atino under the guidance of our facilitator, DaveHorrocks_ci.
@@ -66,7 +66,7 @@ The wireframes for this project were developed using [Balsamiq](https://balsamiq
 
 ### Colour Scheme
 
-![Coolors Palette]()
+![shutterstock color palettes](https://www.shutterstock.com/blog/color-palettes-for-websites)
 
 
 ### Images
@@ -177,7 +177,6 @@ A clone of the repository can be made, which will create a local copy on your ow
 
 
 #### Audio
-
 
 
 ## Acknowledegments:

@@ -157,7 +157,8 @@ A clone of the repository can be made, which will create a local copy on your ow
 ### Content
 
 #### Website Content
-- Quotes  [david attenborough]()
+- Quiz content from [Earth day quiz](https://questionsgems.com/earth-day-quiz/)
+- Quotes from [david attenborough]()
 - Content regarding ways to save our planet modifed from several websites
     
 #### Fonts
@@ -170,10 +171,12 @@ A clone of the repository can be made, which will create a local copy on your ow
 ### Media
 
 #### Images
-* Hero image used from [Pexels]()
-* Logo and banner designed using: [freepik]()
+* Hero image used from [Pexels](https://www.pexels.com/@rostislav/)
+* importance of tree planting  30s video from[youtube](https://www.youtube.com/watch?v=qY8EfttB6As)
+* Logo and banner designed using: [freepik](https://www.freepik.com/search?format=search&query=animatedtoilet&type=vector)
+* Hackathon banner designed & modified  from[canva](https://www.canva.com/)
 * Images of------ in the ----- section are from google Commons
-* Illustrations from UnDraw
+* Illustrations from [UnDraw](https://undraw.co/illustrations)
 
 
 #### Audio
@@ -181,6 +184,6 @@ A clone of the repository can be made, which will create a local copy on your ow
 
 ## Acknowledegments:
 We thank [Code Institute](https://codeinstitute.net/se/5-day-coding-challenge/?utm_term=code%20institute&utm_campaign=CI+-+SWE+-+Search+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=14660337051&hsa_grp=134087657984&hsa_ad=546251838362&hsa_src=g&hsa_tgt=kwd-319867646331&hsa_kw=code%20institute&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQiArt6PBhCoARIsAMF5wajobw5RmzmDSvl-nqpJtRaVQKF-Znj4iDi1CR3oW-l9rBFnjMP_T1QaAvkOEALw_wcB) for organizing this Hackathon.
-* Team members
-*  our Facilitator
+* All the Team members
+* our Facilitator Dave
 

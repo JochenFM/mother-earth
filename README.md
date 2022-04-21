@@ -1,11 +1,11 @@
 ![Theme: EARTH DAY 2022](https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F266010489%2F547435968885%2F1%2Foriginal.20220413-094345?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C680%2C340&s=b588be93ada495fed1aff7fe17875f7f)
 
 # Mother Earth
-* Theme: EARTH DAY 2022
-
-Mother Earth has been developed as part of Code Institute's April 2022 Hackathon to inspire and empower humans to learn about saving the planet through sustainability & raising awareness of environmental issues
+ Mother Earth has been developed as part of Code Institute's April 2022 Hackathon.
+Mother earth helps you plan for a more sustainable future in a playful way through simple tips and isometric illustrations.
 By raising self-awareness we can enable peole to reconnect to themselves ,reconnect to nature and truly comprehend humanity's impact on the planet by creating
 a quiz app feature, tree planting donation feature and some extra resources.
+The team members for this project were: Nigel Doberer, Salwin Achankunju_5P, Yusuf F, Jochen Mayer, Eugenia Muscat & Sandra Atino under the guidance of our facilitator, DaveHorrocks_ci.
 
 
 ![Mock-up of site](images/readme/amiresponsive.png)
@@ -102,7 +102,7 @@ The hero image on the home page is a beach scene. This was chosen to give an imm
 ## Testing
 
 ### [HTML Validator:](https://validator.w3.org/)
-*
+
 
 ### [CSS Validator:](https://jigsaw.w3.org/css-validator/)
 
@@ -172,6 +172,8 @@ A clone of the repository can be made, which will create a local copy on your ow
 #### Images
 * Hero image used from [Pexels]()
 * Logo and banner designed using: [freepik]()
+* Images of------ in the ----- section are from google Commons
+* Illustrations from UnDraw
 
 
 #### Audio

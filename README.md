@@ -62,7 +62,11 @@ The wireframes for this project were developed using [Balsamiq](https://balsamiq
 
 
 ### Changes to Wireframes
+## Design
 
+### Structure
+
+A simple clean design with easy to use buttons handles the navigation throughout the app.
 
 ### Colour Scheme
 
@@ -70,12 +74,19 @@ The wireframes for this project were developed using [Balsamiq](https://balsamiq
 
 
 ### Images
+ * All images used are from pexels ,freepik and are free to used for edcational purposes.
+ * attributes
 
-The hero image on the home page is a beach scene. This was chosen to give an immediate sense of relief and relaxtion. 
+ 
 
 ### Typography
 
  [Google Fonts](https://fonts.google.com/) was used to select the fonts.
+  * The main font used throughout the site is '---------' which belongs to the sans-serif typeface family. The font is clean and elegant, making it a good choice for web design.
+
+ * We have used the '---------------' font for titles and headers all over the site.
+
+ * Sans Serif is set as the fallback font if for any reason the main fonts aren't being imported into the site correctly.
 
 ## Technologies
 

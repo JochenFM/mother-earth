@@ -31,7 +31,7 @@ body a{
     width:20px;
 }
 .navbar {
-  background: transparent;
+  background: var(--darkgreen);
   z-index: 9999;
 }
 
@@ -47,14 +47,13 @@ body a{
 }
 
 
-
 /* -----------------------------hero section ----------------------*/
 /* Hero Section */
 
 section#hero {
   position: relative;
   height: 100vh;
-  background: url("../images/earthbg.jpg") fixed;
+  background: url("../images/background.gif") fixed;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
@@ -65,7 +64,7 @@ section#hero {
   display: flex;
   justify-content: left;
   top: -86px;
-}
+} 
 
 .hero-column {
   text-align: left;

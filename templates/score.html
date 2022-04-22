@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="top-game-area">
+    <div class="game-area">
+        <div id="high-score">
+          <h1 id="finalScore" class="heading">High Scores</h1>
+          <ul id="highScoresList"></ul>
+          <a class="btn" id="go-home" href="/">Go Home</a>
+        </div>
+      </div>
+</section>
+
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="/static/css/quiz.css">
+{% endblock %}
+{% block scripts %}
+<script src="/static/js/score.js"></script>
+{% endblock %}

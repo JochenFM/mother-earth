@@ -50,7 +50,14 @@ def highscores():
     """
     This route displays the highscores webpage.
     """
-    return render_template("highscores.html")    
+    return render_template("highscores.html")
+  
+@app.route("/score")
+def score():
+    """
+    This route displays the score webpage.
+    """
+    return render_template("score.html")    
 
 @app.errorhandler(404)
 def page_not_found(e):

@@ -18,8 +18,11 @@
 body{
 
     color: var(--darkgreen);
-
     }
+.container-fluid{
+    padding:0;
+    margin: 0;
+}
 body a{
     color:var(--white)!important;
 }
@@ -65,11 +68,10 @@ section#hero {
 }
 
 .hero-column {
-  font-family: 'Nosifer', cursive;
   text-align: left;
   font-size: 1.8rem;
   letter-spacing: 0.3px;
-  color: #FFEE88;
+  color: var(--orange);
   text-shadow: 4px 4px 8px #6A994E;
 }
 
@@ -86,7 +88,7 @@ div .col {
 
 #resource-section h1 {
     font-weight: 700;
-    color: #2B1C63;
+    color: var(--darkgreen);
     padding: 40px 0;
     font-size: 46px;
 }
@@ -99,26 +101,18 @@ div .col {
 
 }
 
-.triangle {
-    width: 0;
-    height: 0;
-    float: right;
-    margin-right: -35px;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-bottom: 50px solid #9CF23C;
-}
+
 .resource-card-title {
-    color: #DE786F;
+    color: var(--yellow);
     font-weight: 800;
 }
 
-.learn-card-link {
+.resource-card-link {
     text-decoration: none;
-    color: #9CF23C;
+    color: var(--light);
 }
 
-.learn-card-link:hover {
+.resource-card-link:hover {
     text-decoration: none;
     color: #fff;
 }
@@ -192,3 +186,8 @@ div .col {
 .text-centre {
     text-align: center;
 }
+.rounded{
+    width:70px;
+    height:70px;
+  border-radius:50% !important; 
+ }

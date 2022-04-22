@@ -90,7 +90,7 @@ function renderNextQuestion() {
             }
     
             //questionImageRef.src=nextQuestion["imgSrc"]
-            //answerSelected = false;
+            answerSelected = false;
         } 
     }
     

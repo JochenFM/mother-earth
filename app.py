@@ -36,5 +36,12 @@ def resources():
     """
     return render_template("resources.html")
 
+@app.route("/contact")
+def contact():
+    """
+    This route displays the contact webpage.
+    """
+    return render_template("contact.html")
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"), port=int(os.environ.get("PORT")), debug=os.environ.get("DEBUG", False))

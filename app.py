@@ -22,6 +22,12 @@ def about():
     """
     return render_template("about.html")
 
+@app.route("/quiz")
+def quiz():
+    """
+    This route displays the quiz webpage.
+    """
+    return render_template("quiz.html")
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"), port=int(os.environ.get("PORT")), debug=os.environ.get("DEBUG", False))

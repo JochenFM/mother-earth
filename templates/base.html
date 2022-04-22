@@ -73,7 +73,7 @@
                                 <a class="nav-link" href="{{ url_for('about') }}">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#quiz">Quiz</a>
+                                <a class="nav-link" href="{{ url_for('quiz') }}">Quiz</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#resources">Resources</a>
@@ -252,11 +252,10 @@ Salwin
   </div>
   main
 
+  {% block scripts %}
+  {% endblock %}
 
-        <script src="/static/js/quiz.js"></script>
-        <script src="/static/css/style.css"></script>
 
-<script src="/static/js/quiz.js"></script>
 <script src="/static/js/script.js"></script>
 main
 

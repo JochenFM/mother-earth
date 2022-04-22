@@ -1,0 +1,309 @@
+.body {
+    background-color: #1C3A13;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: 'Roboto Mono', monospace;
+}
+.top-game-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 600px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-content: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.game-area {
+    width: 100vw;
+    height: 90vh;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* buttons */
+.controls {
+    height: 10vh;
+    font-size: 5.5rem;
+    text-align: center;
+    margin-top: 360px;
+}
+
+.btn {
+    font-size: 2.5rem;
+    padding: 2rem 0;
+    width: 30rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #FFB300;
+}
+
+.btn:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 #FFB300;
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+    box-shadow: none;
+    transform: none;
+}
+
+/* game page styling */
+
+#game-area {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 5rem;
+}
+
+#question {
+    margin-bottom: 30px;
+    padding-left: 15px;
+    color: #fff;
+}
+.answers-container {
+    display: flex;
+    margin-bottom: 1rem;
+    margin-left: 100px;
+    width: 80%;
+    border-radius: 15px;
+    background: #FF6C03;
+    font-size: 4rem;
+    min-width: 30rem;
+}
+
+.answers-container:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 #FF6C03;
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.answers-prefix {
+    padding: 1.5rem 1.5rem;
+    color: #fff;
+}
+
+.answer-text {
+    padding: 1.5rem;
+    text-align: left;
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom: 0rem;
+}
+
+#control {
+    margin-top: 1rem;
+    
+}
+/* this is where pop up styling will occur*/
+#fit-picture {
+    height: 25rem;
+    width: 35rem;
+}
+.tally-area {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 80px;
+}
+
+.tally {
+    color: #fff;
+}
+
+.correct {
+    background-color: #24e652;
+}
+
+.incorrect {
+    background-color: #86111d;
+}
+
+
+/* highscores.html final page */
+
+#final-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    border-top: 10px;
+}
+
+#final-heading {
+    height: 15vh;
+    margin-top: 10px;
+    color: #fff;
+}
+
+#finalScore {
+    font-size: 2.5rem;
+    height: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.rank {
+    font-size: 2.5rem;
+    height: 5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+/* form */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin-bottom: 2rem;
+    width: 30rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(14, 132, 168);
+}
+
+#saveScoreBtn {
+    margin-bottom: 2rem;
+}
+
+/* High score page */
+
+#finalScore {
+    height: 10rem;
+    font-size: 5rem;
+}
+
+#high-score {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    border-top: 10px;
+}
+
+#highScoresList {
+    font-size: 2.5rem;
+    height: 5rem;
+    font-weight: 600;
+    margin-top: 5rem;
+    margin-bottom: 15rem;
+}
+
+#go-home{
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Mdeia Queries */
+
+@media screen and (max-width: 816px) {
+   .header-image {
+    width: 95vw;
+   }
+}
+  
+@media screen and (max-width: 768px) {
+    .header-image {
+        object-fit: cover;
+        padding: 1rem;
+    }
+    .game-area {
+        padding: 0;
+        width: 90vw;
+    }
+    .answers-container{
+        margin-left: 70px;
+    }
+   .controls {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-top: 350px;
+   }
+   .btn {
+       margin-top: 2rem;
+   }
+   
+}
+  
+@media screen and (max-width: 377px) {
+    .game-area {
+        margin-top: 5px;
+        padding: 0.5rem;
+    }
+    #game-area{
+        margin-top: 5px;
+    }
+    .header-image {
+        object-fit: cover;
+    }
+    .heading {
+        margin-top: 5px;
+        padding: 0;
+    }
+    #question {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-size: 2rem;
+    }
+    .answers-container{
+        margin-left: 30px;
+        font-size: 2rem;
+        font-weight: 550;
+    }
+    #fit-picture {
+        height: 15rem;
+        width: 20rem;
+    }
+    .controls {
+        margin-top: 240px;
+    }
+    #control{
+        margin-top: 0;
+    }
+    .btn {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        width: 25rem;
+    }
+    .tally-area{
+        margin-top: .5rem;
+        margin-left: 15px;
+    }
+    #final-heading {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        height: 5vh;
+    }
+    #finalScore {
+        margin-bottom: 0.5rem;
+        height: 10vh;
+    }
+    .rank{
+        margin-left: 10px;
+        font-size: 1.5rem;
+    }
+    #username {
+        width: 25rem;
+    }
+}

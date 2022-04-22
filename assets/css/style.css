@@ -1,30 +1,48 @@
-/* include google fonts here------------ */
+/* _____________________google fonts here------------ */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=IBM+Plex+Serif:wght@100;200;300;400&family=Montserrat:wght@300&family=Ubuntu+Condensed&display=swap');
+
+/* -----------------------------global styles--------------------------- */
 *{
     padding:0;
     margin:0;
     box-sizing: border-box;
 }
-/* -----------------------------global styles--------------------------- */
 :root {
         --dark:#000;
         --white:#fff;
         --light:#ADAB9C;
         --green:#77913B;
         --darkgreen:#1C3A13;
+        --bg-color:#f1f1f1;
         --yellow:#FFB300;
         --orange:#FF6C03;
-        }
+        --abrilfatface: 'Abril Fatface', cursive;
+        --ibmplex: 'IBM Plex Serif', serif;
+        --montserrat: 'Montserrat', sans-serif;
+        --ubuntu: 'Ubuntu Condensed', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
 
 body{
-
-    color: var(--darkgreen);
+    background-color:var(--bg-color) ;
     }
+
 .container-fluid{
     padding:0;
     margin: 0;
 }
+
 body a{
     color:var(--white)!important;
+    text-decoration: none;
+    
+}
+p{
+    font-family: var(--montserrat);
+    font-weight: 300;
 }
 /* ------------------------------navbar-------------- */
 .logo{
@@ -41,7 +59,8 @@ body a{
 }
 
 .nav-text {
- 
+  font-family: var(--ubuntu);
+  font-weight: 300;
   font-size: 25px;
   vertical-align: bottom;
 }
@@ -72,7 +91,7 @@ section#hero {
   font-size: 1.8rem;
   letter-spacing: 0.3px;
   color: var(--orange);
-  text-shadow: 4px 4px 8px #6A994E;
+  text-shadow: 4px 4px 8px #112206;
 }
 
 .cta-column {
@@ -80,7 +99,7 @@ section#hero {
   margin: 0;
 }
 /* -----------------------resources page------------------------ */
-/* -------------------- Resources Page*/
+
 
 div .col {
     padding: 5px;
@@ -96,8 +115,9 @@ div .col {
 .card-resource{
     border: none;
     background-color:var(--darkgreen);
-    color: #fff;
+    color: var(--white);
     border-radius: 20px;
+    padding: 10px;
 
 }
 
@@ -148,17 +168,32 @@ div .col {
 
     }
 }
+
 /* -------------------------footer--------------------------------- */
 
 #footer {
-    background-color: var(--darkgreen);
+    background-color: var(--bg-color);
     padding: 60px;
 }
 
 #footer h2 {
-    padding-bottom: 20px;
-    color: white;
-    font-size: 30px;
+    font-family: var(--abrilfatface);
+    padding-bottom: 30px;
+    color:var(--white);
+    font-size: 3rem;
+    text-shadow: 
+    0 1px 0 #ccc, 
+    0 2px 0 #c9c9c9, 
+    0 3px 0 #bbb, 
+    0 4px 0 #b9b9b9, 
+    0 5px 0 #aaa, 
+    0 6px 1px rgba(0,0,0,.1), 
+    0 0 5px rgba(0,0,0,.1), 
+    0 1px 3px rgba(0,0,0,.3), 
+    0 3px 5px rgba(0,0,0,.2), 
+    0 5px 10px rgba(0,0,0,.25), 
+    0 10px 10px rgba(0,0,0,.2), 
+    0 20px 20px rgba(0,0,0,.15);
 }
 
 .github-links li {
@@ -173,7 +208,7 @@ div .col {
 }
 
 .github-links a {
-    font-size: 150%;
+    font-size: 170%;
     padding-right: 2%;
     padding-left: 2%;
 }
@@ -191,3 +226,87 @@ div .col {
     height:70px;
   border-radius:50% !important; 
  }
+
+.bg-footer{
+    background-color: var(--darkgreen);
+}
+footer.social-icons{
+    text-align: right;
+}
+.social-icons li{
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.social-icons a{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color: var(--green);
+  
+}
+.copyright-text{
+  margin:0
+}
+@media (max-width:991px){
+  .footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px){
+  .copyright-text, .social-icons{
+    text-align:center;
+    color:var(--white);
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:var(--white);
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  color:var(--white);
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+
+.social-icons.size-sm a{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+
+
+@media (max-width:767px){
+  .social-icons li.title{
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}

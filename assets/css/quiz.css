@@ -1,4 +1,4 @@
-#body {
+.body {
     background-color: #1C3A13;
 }
 
@@ -9,7 +9,6 @@
     font-size: 62.5%;
     font-family: 'Roboto Mono', monospace;
 }
-/* Landing page styling */
 .top-game-area {
     display: grid;
     grid-template-columns: 1fr;
@@ -46,11 +45,11 @@
     width: 30rem;
     border-radius: 10px;
     border: none;
-    background-color: white;
+    background-color: #FFB300;
 }
 
 .btn:hover {
-    box-shadow: 0 0.4rem 1.4rem 0 white;
+    box-shadow: 0 0.4rem 1.4rem 0 #FFB300;
     transition: transform 150ms;
     transform: scale(1.03);
 }
@@ -71,6 +70,7 @@
 #question {
     margin-bottom: 30px;
     padding-left: 15px;
+    color: #fff;
 }
 .answers-container {
     display: flex;
@@ -78,20 +78,20 @@
     margin-left: 100px;
     width: 80%;
     border-radius: 15px;
-    background: rgb(14, 132, 168);
+    background: #FF6C03;
     font-size: 4rem;
     min-width: 30rem;
 }
 
 .answers-container:hover {
-    box-shadow: 0 0.4rem 1.4rem 0 rgb(14, 132, 168);
+    box-shadow: 0 0.4rem 1.4rem 0 #FF6C03;
     transition: transform 150ms;
     transform: scale(1.03);
 }
 
 .answers-prefix {
-    padding: 1rem 1.5rem;
-    color: aliceblue;
+    padding: 1.5rem 1.5rem;
+    color: #fff;
 }
 
 .answer-text {
@@ -100,13 +100,14 @@
     width: 100%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    margin-bottom: 0rem;
 }
 
 #control {
     margin-top: 1rem;
     
 }
-
+/* this is where pop up styling will occur*/
 #fit-picture {
     height: 25rem;
     width: 35rem;
@@ -117,12 +118,16 @@
     margin-left: 80px;
 }
 
+.tally {
+    color: #fff;
+}
+
 .correct {
     background-color: #24e652;
 }
 
 .incorrect {
-    background-color: #dc3545;
+    background-color: #86111d;
 }
 
 
@@ -140,6 +145,7 @@
 #final-heading {
     height: 15vh;
     margin-top: 10px;
+    color: #fff;
 }
 
 #finalScore {
@@ -147,6 +153,7 @@
     height: 5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    color: #fff;
 }
 
 .rank {
@@ -154,6 +161,7 @@
     height: 5rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
+    color: #fff;
 }
 
 /* form */

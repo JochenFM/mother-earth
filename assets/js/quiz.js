@@ -1,3 +1,10 @@
+Jochen
+var modalCorrect = document.getElementById('modal-correct')
+
+modalCorrect.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
+
 // const start = document.querySelector("#start");
 const questionRef = document.querySelector("#question");
 const answersRef = Array.from(document.querySelectorAll(".answer-text"));
@@ -138,3 +145,4 @@ function saveHighScore() {
     localStorage.setItem('score', score);
     window.location.assign("highscores.html");
 }
+main

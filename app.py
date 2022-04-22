@@ -29,5 +29,12 @@ def quiz():
     """
     return render_template("quiz.html")
 
+@app.route("/resources")
+def resources():
+    """
+    This route displays the resources webpage.
+    """
+    return render_template("resources.html")
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"), port=int(os.environ.get("PORT")), debug=os.environ.get("DEBUG", False))

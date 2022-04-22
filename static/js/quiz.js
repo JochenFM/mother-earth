@@ -1,4 +1,3 @@
-Jochen
 var modalCorrect = document.getElementById('modal-correct')
 
 modalCorrect.addEventListener('shown.bs.modal', function () {
@@ -145,4 +144,3 @@ function saveHighScore() {
     localStorage.setItem('score', score);
     window.location.assign("highscores.html");
 }
-main

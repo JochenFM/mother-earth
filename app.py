@@ -45,6 +45,13 @@ def contact():
     """
     return render_template("contact.html")
 
+@app.route("/highscores")
+def highscores():
+    """
+    This route displays the highscores webpage.
+    """
+    return render_template("highscores.html")    
+
 @app.errorhandler(404)
 def page_not_found(e):
     """

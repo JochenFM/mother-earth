@@ -142,5 +142,5 @@ for (const answer of answersContainerRef) {
 function saveHighScore() {
     let score = parseInt(scoreRef.innerText);
     localStorage.setItem('score', score);
-    window.location.assign("highscores.html");
+    window.location.assign("/highscores");
 }

@@ -1,3 +1,19 @@
+/* for quiz_splash.html*/
+
+.jumbotron{
+
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.image-container img{
+
+    width: 220px;
+}
+
+
 .top-game-area {
     display: grid;
     grid-template-columns: 1fr;
@@ -203,7 +219,7 @@ input {
     text-decoration: none;
 }
 
-/* Mdeia Queries */
+/* Media Queries */
 
 @media screen and (max-width: 816px) {
    .header-image {

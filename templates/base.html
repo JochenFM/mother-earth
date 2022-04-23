@@ -56,12 +56,10 @@
 </head>
 
 <body>
-    <!-- section homepage -->
     <div class="container-fluid">
 
-        <!-- Navbar -->
         <header>
-
+            <!-- Navbar -->
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid mr-2 ml-2">
                     <a class="navbar-brand" href="{{ url_for('home_page') }}"><img src="/static/images/logo.png"
@@ -69,6 +67,7 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
+
     
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                       <ul class="navbar-nav mr-auto align-items-center">
@@ -76,7 +75,9 @@
                           <a class="nav-link hvr-underline-from-left active" href="{{ url_for('about') }}">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link hvr-underline-from-left" href="{{ url_for('contact') }}">Quiz</a>
+
+                            <a class="nav-link hvr-underline-from-left" href="{{ url_for('quiz_splash') }}">Quiz</a>
+
                           </li>
                         <li class="nav-item">
                             <a class="nav-link hvr-underline-from-left active" href="{{ url_for('resources') }}">Resources</a>
@@ -85,125 +86,67 @@
                             <a class="nav-link hvr-underline-from-left" href="{{ url_for('contact') }}">Contact</a>
                           </li>
                       </ul>
+
                     </div>
                 </div>
             </nav>
+            <!-- end of navbar -->
         </header>
-    <!-- end of navbar -->
-    {% block content %}
-    {% endblock %}
-    <!-- section footer -->
-    <hr>
-    <footer>
-      <div class="container-fluid text-center" id="footer">
-        <div class="row">
-          <div class="col-md">
-            <h2>Connect with us on GitHub!</h2>
-            <!-- Team Github links -->
-            <ul class="github-links">
-              <li><a href="https://github.com/emusat2021" target="_blank" rel="noopener noreferrer"
-                  aria-label="Eugenia avatar">
-                  <img src="static/images/eugenia.jpg" alt="eugenia avatar" class="rounded hvr-pulse"
-                    data-bs-toggle="tooltip" data-bs-placement="top" title="Eugenia"></a></li>
-              <li><a href="https://github.com/Niged01" target="_blank" rel="noopener noreferrer"
-                  aria-label="nigel avatar"><img src="static/images/nigel.jpg" alt="team avatar"
-                    class="rounded hvr-pulse" data-bs-toggle="tooltip" data-bs-placement="top" title="Nigel"></a>
-              </li>
-              <li><a href="https://github.com/JochenFM" target="_blank" rel="noopener noreferrer"
-                  aria-label="jochen avatar"><img src="static/images/jochen.jpg" alt="team avatar"
-                    class="rounded hvr-pulse" data-bs-toggle="tooltip" data-bs-placement="top" title="Jochen"></a></li>
-              <li><a href="https://github.com/Yusuffrih" target="_blank" rel="noopener noreferrer"
-                  aria-label="yusuf avatar"><img src="static/images/yusuf.jpg" alt="team avatar"
-                    class="rounded hvr-pulse" data-bs-toggle="tooltip" data-bs-placement="top" title="Yusuf"></a>
-              </li>
-              <li><a href="https://github.com/Atinos31" target="_blank" rel="noopener noreferrer"
-                  aria-label="sandra avatar"><img src="static/images/sandra.jpg" alt="team avatar"
-                    class="rounded hvr-pulse" data-bs-toggle="tooltip" data-bs-placement="top" title="Sandra"></a></li>
-              <li><a href="https://github.com/SalwinA" target="_blank" rel="noopener noreferrer"
-                  aria-label="jochen avatar"><img src="static/images/salwin.jpg" alt="salwin avatar"
-                    class="rounded hvr-pulse" data-bs-toggle="tooltip" data-bs-placement="top" title="Salwin"></a></li>
-              <li><a href="https://github.com/DaveyJH" target="_blank" rel="noopener noreferrer"
-                  aria-label="dave avatar"><img src="static/images/dave.jpg" alt="dave avatar" class="rounded hvr-pulse"
-                    data-bs-toggle="tooltip" data-bs-placement="top" title="Dave"></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <div class="container-fluid py-4 bg-footer">
-        <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text text-white text-center">Copyright &copy 2022 All Righs Reserved by <i
-                class="fa fa-code-pull-request"></i><a href="{{ url_for('home_page') }}"
-                class="text-warning hvr-pulse">ECOders.</a></p>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-icons">
-              <li><a href="https://www.facebook.com/" class="facebook hvr-pulse" target="_blank"><i
-                    class="fab fa-facebook"></i></a></li>
-              <li><a href="https://www.instagram.com/" class="instagram hvr-pulse" target="_blank"><i
-                    class="fab fa-instagram"></i></a></li>
-              <li><a href="https://www.linkedin.com/" class="linkedin hvr-pulse" target="_blank"><i
-                    class="fab fa-linkedin"></i></a></li>
-              <li><a href="https://www.twitter.com/" class="twitter hvr-pulse" target="_blank"><i
-                    class="fab fa-twitter"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- end of section footer /-->
 
-    <!-- Button trigger modal this section would need to be replaced with HTML for four answer options-->
-    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-correct">
-    Answer 1
-  </button> -->
-
-    <!-- Button trigger modal this section would need to be replaced with HTML for four answer options-->
-    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-false">
-    Answer 2
-  </button> -->
-
-    <!-- script tags -->
-
-
-    <!-- Modal for correct answer -->
-    <div class="modal fade" id="modal-correct" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-      aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Good job!</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>You help saving our planet!</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue playing</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal for wrong answer -->
-    <div class="modal fade" id="modal-false" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-      aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Oooops!</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>Please try again</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue playing</button>
-          </div>
-        </div>
-      </div>
-    </div>
+        <!-- Page Content  -->
+        {% block content %}
+        {% endblock %}
+                 
+        <!-- section footer -->
+        <footer>
+            <div class="container-fluid text-center" id="footer">
+                <div class="row">
+                    <div class="col-md">
+                        <h2>Connect with us on GitHub!</h2>
+                        <!-- Team Github links -->
+                        <ul class="github-links">
+                            <li><a href="https://github.com/emusat2021" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Eugenia avatar">
+                                <img src="static/images/eugenia.jpg" alt="eugenia avatar" class="rounded hvr-pulse" data-bs-toggle="tooltip" data-bs-placement="top" title="Eugenia"></a></li>
+                            <li><a href="https://github.com/Niged01" target="_blank" rel="noopener noreferrer"
+                                    aria-label="nigel avatar"><img src="static/images/nigel.jpg" alt="team avatar" class = "rounded hvr-pulse" data-bs-toggle="tooltip" data-bs-placement="top" title="Nigel"></a>
+                            </li>
+                            <li><a href="https://github.com/JochenFM" target="_blank" rel="noopener noreferrer"
+                                    aria-label="jochen avatar"><img src="static/images/jochen.jpg"
+                                        alt="team avatar" class="rounded hvr-pulse" data-bs-toggle="tooltip" data-bs-placement="top" title="Jochen"></a></li>
+                            <li><a href="https://github.com/Yusuffrih" target="_blank" rel="noopener noreferrer"
+                                    aria-label="yusuf avatar"><img src="static/images/yusuf.jpg" alt="team avatar" class="rounded hvr-pulse" data-bs-toggle="tooltip" data-bs-placement="top" title="Yusuf"></a>
+                            </li>
+                            <li><a href="https://github.com/Atinos31" target="_blank" rel="noopener noreferrer"
+                                    aria-label="sandra avatar"><img src="static/images/sandra.jpg"
+                                        alt="team avatar" class="rounded hvr-pulse" data-bs-toggle="tooltip" data-bs-placement="top" title="Sandra"></a></li>
+                            <li><a href="https://github.com/SalwinA" target="_blank" rel="noopener noreferrer"
+                                    aria-label="jochen avatar"><img src="static/images/salwin.jpg"
+                                        alt="salwin avatar" class="rounded hvr-pulse" data-bs-toggle="tooltip" data-bs-placement="top" title="Salwin"></a></li>
+                        <li><a href="https://github.com/DaveyJH" target="_blank" rel="noopener noreferrer"
+                                    aria-label="dave avatar"><img src="static/images/dave.jpg"
+                                        alt="dave avatar" class="rounded hvr-pulse" data-bs-toggle="tooltip" data-bs-placement="top" title="Dave"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid py-4 bg-footer">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <p class="copyright-text text-white text-center">Copyright &copy 2022 All Righs Reserved by <i class="fa fa-code-pull-request"></i><a href="{{ url_for('home_page') }}" class="text-warning hvr-pulse">ECOders.</a></p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <ul class="social-icons">
+                            <li><a href="https://www.facebook.com/" class="facebook hvr-pulse" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/" class="instagram hvr-pulse" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/" class="linkedin hvr-pulse" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://www.twitter.com/" class="twitter hvr-pulse" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of section footer /-->
 
     {% block scripts %}
     {% endblock %}

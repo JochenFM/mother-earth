@@ -24,6 +24,13 @@ def about():
     """
     return render_template("about.html")
 
+@app.route("/quiz_splash")
+def quiz_splash():
+    """
+    This route displays the quiz splash webpage.
+    """
+    return render_template("quiz_splash.html")    
+
 @app.route("/quiz")
 def quiz():
     """

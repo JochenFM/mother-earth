@@ -25,11 +25,12 @@
     <meta property="og:url" content="https://github.com/JochenFM/mother-earth" /> <!-- deployed site url-->
     <meta property="og:site_name" content="Mother Earth" />
     <meta property="og:title" content="Mother Earth" />
-    <meta name="author" content="The sustainable hackers">
+    <meta name="author" content="ECOders">
     <meta property="og:description" content="A website created to create awareness on sustainability" />
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <!-- Fontawesome Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Google Fonts -->
@@ -54,100 +55,89 @@
 
         <!-- Navbar -->
         <header>
-            
 
-  
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand logo" href="{{ url_for('home_page') }}"><img src="/static/images/logo.png"
-                            style="width: 70px;" alt="mother earth logo"></a>
-                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid mr-2 ml-2">
+                    <a class="navbar-brand" href="{{ url_for('home_page') }}"><img src="/static/images/logo.png"
+                        style="width: 70px;" alt="mother earth logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse nav justify-content-end" id="navbarSupportedContent">
-                        <ul class="nav justify-content-end">
-                            <li class="nav-item active">
-                                <a class="nav-link" aria-current="page" href="{{ url_for('home_page') }}">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ url_for('about') }}">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ url_for('quiz') }}">Quiz</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ url_for('resources') }}">Resources</a>
-                            </li>
-                             <li class="nav-item">
-                                <a class="nav-link"  href="{{ url_for('contact') }}" id="contact">Contact</a>
-                            </li>
-                        </ul>
+    
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto align-items-center">
+                        <li class="nav-item">
+                          <a class="nav-link hvr-underline-from-left active" href="{{ url_for('about') }}">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hvr-underline-from-left" href="{{ url_for('quiz') }}">Quiz</a>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link hvr-underline-from-left active" href="{{ url_for('resources') }}">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hvr-underline-from-left" href="{{ url_for('contact') }}">Contact</a>
+                          </li>
+                      </ul>
                     </div>
                 </div>
             </nav>
         </header>
          
-        
+
         <!-- end of navbar -->
         {% block content %}
         {% endblock %}
                  
      <!-- section footer -->
-      <footer>
-          <div class="container-fluid text-center" id="footer">
-              <div class="row">
-                  <div class="col-md">
-                      <h2>Connect with us on GitHub!</h2>
-                      <!-- Team Github links -->
-                      <ul class="github-links">
-                          <li><a href="https://github.com/emusat2021" target="_blank" rel="noopener noreferrer"
-                                  aria-label="Eugenia avatar">
-                                  <img src="/static/images/eugenia.jpg" alt="eugenia avatar" class="rounded hvr-pulse"></a></li>
-                          <li><a href="https://github.com/Niged01" target="_blank" rel="noopener noreferrer"
-                                  aria-label="nigel avatar"><img src="/static/images/nigel.jpg" alt="team avatar" class = "rounded hvr-pulse"></a>
-                          </li>
-                          <li><a href="https://github.com/JochenFM" target="_blank" rel="noopener noreferrer"
-                                  aria-label="jochen avatar"><img src="/static/images/jochen.jpg"
-                                      alt="team avatar" class="rounded hvr-pulse"></a></li>
-                          <li><a href="https://github.com/Yusuffrih" target="_blank" rel="noopener noreferrer"
-                                  aria-label="yusuf avatar"><img src="/static/images/yusuf.jpg" alt="team avatar" class="rounded hvr-pulse"></a>
-                          </li>
-                           <li><a href="https://github.com/Atinos31" target="_blank" rel="noopener noreferrer"
-                                  aria-label="sandra avatar"><img src="/static/images/sandra.jpg"
-                                      alt="team avatar" class="rounded hvr-pulse"></a></li>
-                          <li><a href="https://github.com/SalwinA" target="_blank" rel="noopener noreferrer"
-                                  aria-label="avatar"><img src="/static/images/salwin.jpg"
-                                      alt="salwin avatar" class="rounded hvr-pulse"></a></li>
+        <footer>
+            <div class="container-fluid text-center" id="footer">
+                <div class="row">
+                    <div class="col-md">
+                        <h2>Connect with us on GitHub!</h2>
+                        <!-- Team Github links -->
+                        <ul class="github-links">
+                            <li><a href="https://github.com/emusat2021" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Eugenia avatar">
+                                <img src="static/images/eugenia.jpg" alt="eugenia avatar" class="rounded hvr-pulse" data-bs-toggle="tooltip" data-bs-placement="top" title="Eugenia"></a></li>
+                            <li><a href="https://github.com/Niged01" target="_blank" rel="noopener noreferrer"
+                                    aria-label="nigel avatar"><img src="static/images/nigel.jpg" alt="team avatar" class = "rounded hvr-pulse" data-bs-toggle="tooltip" data-bs-placement="top" title="Nigel"></a>
+                            </li>
+                            <li><a href="https://github.com/JochenFM" target="_blank" rel="noopener noreferrer"
+                                    aria-label="jochen avatar"><img src="static/images/jochen.jpg"
+                                        alt="team avatar" class="rounded hvr-pulse" data-bs-toggle="tooltip" data-bs-placement="top" title="Jochen"></a></li>
+                            <li><a href="https://github.com/Yusuffrih" target="_blank" rel="noopener noreferrer"
+                                    aria-label="yusuf avatar"><img src="static/images/yusuf.jpg" alt="team avatar" class="rounded hvr-pulse" data-bs-toggle="tooltip" data-bs-placement="top" title="Yusuf"></a>
+                            </li>
+                            <li><a href="https://github.com/Atinos31" target="_blank" rel="noopener noreferrer"
+                                    aria-label="sandra avatar"><img src="static/images/sandra.jpg"
+                                        alt="team avatar" class="rounded hvr-pulse" data-bs-toggle="tooltip" data-bs-placement="top" title="Sandra"></a></li>
+                            <li><a href="https://github.com/SalwinA" target="_blank" rel="noopener noreferrer"
+                                    aria-label="jochen avatar"><img src="static/images/salwin.jpg"
+                                        alt="salwin avatar" class="rounded hvr-pulse" data-bs-toggle="tooltip" data-bs-placement="top" title="Salwin"></a></li>
                         <li><a href="https://github.com/DaveyJH" target="_blank" rel="noopener noreferrer"
-                                  aria-label="avatar"><img src="/static/images/dave.jpg"
-                                      alt="dave avatar" class="rounded hvr-pulse"></a></li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-        
-          <div class="container-fluid py-4 bg-footer">
-              <div class="row">
-                  <div class="col-md-8 col-sm-6 col-xs-12">
-                      <p class="copyright-text text-white text-center">Copyright &copy 2022 All Righs Reserved by <a href="{{ url_for('home_page') }}" class="text-warning hvr-pulse">ECOders.</a></p>
-                  </div>
-                  <div class="col-md-4 col-sm-6 col-xs-12">
-                      <ul class="social-icons">
-                          <li><a href="#" class="facebook hvr-pulse"><i class="fab fa-facebook"></i></a></li>
-                          <li><a href="#" class="instagram hvr-pulse"><i class="fab fa-instagram"></i></a></li>
-                          <li><a href="#" class="linkedin hvr-pulse"><i class="fab fa-linkedin"></i></a></li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </footer>
-    <!-- Scripts -->
-    <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
-    </script>
+                                    aria-label="dave avatar"><img src="static/images/dave.jpg"
+                                        alt="dave avatar" class="rounded hvr-pulse" data-bs-toggle="tooltip" data-bs-placement="top" title="Dave"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid py-4 bg-footer">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <p class="copyright-text text-white text-center">Copyright &copy 2022 All Righs Reserved by <i class="fa fa-code-pull-request"></i><a href="{{ url_for('home_page') }}" class="text-warning hvr-pulse">ECOders.</a></p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <ul class="social-icons">
+                            <li><a href="https://www.facebook.com/" class="facebook hvr-pulse" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/" class="instagram hvr-pulse" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/" class="linkedin hvr-pulse" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://www.twitter.com/" class="twitter hvr-pulse" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     <!-- end of section footer /-->
 
 
@@ -155,8 +145,12 @@
   {% block scripts %}
   {% endblock %}
 
+    <!-- Scripts -->
+    <!-- Local JS File -->
+    <script src="/static/js/script.js"></script>
+    
+    <!-- end of scripts section -->
 
-<script src="/static/js/script.js"></script>
 
 </body>
 

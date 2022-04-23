@@ -6,7 +6,9 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
 :root {
         --dark:#000;
         --white:#fff;
@@ -21,13 +23,14 @@
         --montserrat: 'Montserrat', sans-serif;
         --ubuntu: 'Ubuntu Condensed', sans-serif;
 }
-html{
-    scroll-behavior: smooth;
-}
 
+html {
+  font-size: 62.5%;
+}
 
 body{
     background-color:var(--bg-color) ;
+    font-size: 1.6rem;
     }
 
 .container-fluid{
@@ -44,6 +47,27 @@ p{
     font-family: var(--montserrat);
     font-weight: 300;
 }
+
+
+/* ---------------------------- Headers */
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+
 /* ------------------------------navbar-------------- */
 .logo{
     width:20px;
@@ -57,6 +81,7 @@ p{
 .logo {
   width: 34px;
   height: 44px;
+  padding: 0 0 10px 10px;
 }
 
 .nav-text {
@@ -73,7 +98,7 @@ p{
 section#hero {
   position: relative;
   height: 100vh;
-  background: url("../images/background.gif") fixed;
+  background: url("/static/images/background-image.jfif");
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;

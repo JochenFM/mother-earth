@@ -8,12 +8,6 @@
 
 }
 
-.image-container img{
-
-    width: 220px;
-}
-
-
 .top-game-area {
     display: grid;
     grid-template-columns: 1fr;

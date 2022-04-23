@@ -28,6 +28,7 @@ html{
 
 body {
     font-family: var(--ibmplex);
+    
     color: #000;
     height: auto;
     width: 100%;
@@ -36,13 +37,22 @@ body {
 
 .contact-heading{
     font-family: var(--abrilfatface);
-    color:var(--darkgreen);
+    color:var(--white);
     font-size: 7rem;
     z-index: 999;
     font-weight: 400;
     letter-spacing: 0.1rem;
 }
-
+.contact-bg{
+    background-color: var(--darkgreen); 
+   background-image: url('/static/images/contact.png');
+   background-repeat: no-repeat;
+   background-position: center;
+   clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    position: relative;
+    width: 100%;
+    
+}
 /*FORM*/
 form {
     display: flex;
@@ -90,7 +100,7 @@ input{
 }
             
 i{
-  color: #009EDF;
+  color: #fff;
 }
 
 input{
@@ -256,19 +266,12 @@ legend {
     .submit-btn {
         width: 250px;
     }
-    form {
-        min-width: 100%;
-        margin-bottom: 10px;
-        padding-top: 8px;
-        margin-top: 0;
-    }
-    h2 {
-        font-size: 22px;
-    }
-    label {
+    
+   
+label {
         text-align: center;
     }
-    .btn-success {
+.btn-success {
         top: 20px;
         font-size: 15px;
         text-align: center;
@@ -278,9 +281,8 @@ legend {
         float: none;
         left: 10px;
     }
-    .contact-bg {
+ .contact-bg {
         padding-top: 0;
         margin-top: 0;
         padding-bottom: 10px
     }
-}

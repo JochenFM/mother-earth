@@ -203,7 +203,7 @@ input {
     text-decoration: none;
 }
 
-/* Mdeia Queries */
+/* Media Queries */
 
 @media screen and (max-width: 816px) {
    .header-image {

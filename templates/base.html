@@ -69,7 +69,7 @@
                           <a class="nav-link hvr-underline-from-left active" href="{{ url_for('about') }}">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link hvr-underline-from-left" href="{{ url_for('quiz') }}">Quiz</a>
+                            <a class="nav-link hvr-underline-from-left" href="{{ url_for('quiz_splash') }}">Quiz</a>
                           </li>
                         <li class="nav-item">
                             <a class="nav-link hvr-underline-from-left active" href="{{ url_for('resources') }}">Resources</a>
@@ -140,55 +140,7 @@
         </footer>
         <!-- end of section footer /-->
 
-<!-- Button trigger modal this section would need to be replaced with HTML for four answer options-->
-<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-correct">
-    Answer 1
-  </button> -->
 
-  <!-- Button trigger modal this section would need to be replaced with HTML for four answer options-->
-<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-false">
-    Answer 2
-  </button> -->
-
-        <!-- script tags -->
-
-  
-  <!-- Modal for correct answer -->
-  <div class="modal fade" id="modal-correct" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Good job!</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>You help saving our planet!</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue playing</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal for wrong answer -->
-  <div class="modal fade" id="modal-false" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Oooops!</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>Please try again</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue playing</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  
   {% block scripts %}
   {% endblock %}
 

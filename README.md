@@ -28,6 +28,7 @@ Deployed website can be viewed [here]().
 - As a user, I want to enjoy simple and streamlined design that emulates the purpose of the site.
 - As a user, I want to enjoy images that reflect the aim of the site and convey the idea of a beautiful earth
 - As a user, I want to find social media links so i can easily reach out to the company for any queries.
+- As a user, I want to receive rewards based on my wins playing the quiz.
 
 
 ### **Existing Features**
@@ -40,12 +41,7 @@ Deployed website can be viewed [here]().
 * **About Page** - Gives users a good understanding of why the site exists and what its mission is.
     ![About page](images/readme/about.png)
 
-* **Login Page** - The login page has the front-end of login feature. This page is the base for future implementation of user-registrations.
-    ![Login page](images/readme/login.png)
 
-
-### **Features Left to Implement**
-* Registration/Login - In the future users can register for an account and login.
 ### Wireframes
 The wireframes for this project were developed using [Balsamiq](https://balsamiq.com/).
 
@@ -74,10 +70,8 @@ A simple clean design with easy to use buttons handles the navigation throughout
 
 
 ### Images
- * All images used are from pexels ,freepik and are free to used for edcational purposes.
+ * All images used are from pexels ,freepik and are free to used for educational purposes.
  * attributes
-
- 
 
 ### Typography
 

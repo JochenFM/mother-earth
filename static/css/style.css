@@ -18,6 +18,7 @@
         --bg-color:#f1f1f1;
         --yellow:#FFB300;
         --orange:#FF6C03;
+        --gradient:linear-gradient(to bottom right, #ff6c03, #B2EBF2);
         --abrilfatface: 'Abril Fatface', cursive;
         --ibmplex: 'IBM Plex Serif', serif;
         --montserrat: 'Montserrat', sans-serif;
@@ -122,6 +123,20 @@ section#hero {
   font-size: 2.8rem;
   margin: 0;
 }
+/*------------------------------about page----------------------*/
+.about-header{
+  font-family: var(--abrilfatface);
+  letter-spacing: 0.1rem;
+  line-height: 2.4rem;
+}
+
+.about-btn{
+         width: 100%;
+         text-align: center;
+         color: rgb(233, 216, 216);
+         margin-top: 20px;
+         border: 1px solid rgba(0,0,0,0.4);
+      }
 /* -----------------------resources page------------------------ */
 
 
@@ -130,6 +145,7 @@ div .col {
 }
 
 #resource-section h1 {
+  font-family: var(--abrilfatface);
     font-weight: 700;
     color: var(--darkgreen);
     padding: 40px 0;

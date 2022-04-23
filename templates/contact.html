@@ -2,63 +2,95 @@
 {% block content %}
 <!--form -->
 <section id="contact" class="container">
-    <div class="contact-bg">
-        <form onsubmit="return sendForm(this);" method="POST" id="form" name="contact-form">
-            <div class="col-12 col-lg-6">
-                <fieldset>
-                    <legend>
-                        Your Details:
-                    </legend>
-                    <label for="name">Full Names:
-        <input type="text" id="name" name="name"  placeholder="Full names..." required>
-        </label>
-                    <br/>
-                    <label for="emailaddress">Email Address:
-        <input type="email" name="emailaddress" id="emailaddress" placeholder="Email address..." required>
-        </label>
-                    <br/>
-                </fieldset>
-                <br/>
-                <fieldset>
-                    <legend>Your Review:</legend>
-                    <p>
-                        <label for="hear-about">How did you hear about Us?</label>
-                        <select name="referrer" id="hear-about">
-            <option value="google">Google</option>
-            <option value="friend">Friend</option>
-            <option value="advert">Advert</option>
-            <option value="other">Other</option>
-          </select>
-                    </p>
-                    <p>Would you visit again?<br/>
-                        <label>
-          <input type="radio" name="rating" value="yes"/> Yes
-          </label>
-                        <label>
-          <input type="radio" name="rating" value="no"> No
-          </label>
-                        <label>
-          <input type="radio" name="rating" value="maybe"> Maybe
-          </label>
-                    </p>
-                    <p>
-                        <label for="message">Comments:</label><br/>
-                        <textarea name="message" id="message" placeholder="write your message here..." required></textarea>
-                    </p>
-                    <label>
-        <input type="checkbox" name="subscribe" checked="checked"/> Sign me up for email updates
-        </label>
-                    <br/>
-                    <button type="submit" class="submit-btn" id="submit-btn" data-toggle="modal" data-target="#myModal">Submit</button>
-                </fieldset>
+    <div class="p-5">
+        <h2 class="text-center contact-heading">Contact Us</h2>
+        <div class="contact-bg">
+                    <form onsubmit="return sendForm(this);" method="POST" id="form" name="contact-form">
+                        <div class="col-12 col-lg-6">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <br />
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i> </div>
+                                    <input type="text" id="name" placeholder="Enter Your Name" required/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <br />
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"> </i>
+                                    </div>
+                                    <input type="email" id="email" placeholder="Enter Your Email" required />
+                                </div>
+                            </div>
+                            <p>
+                                <label for="hear-about">How did you hear about Us?</label>
+                                <select name="referrer" id="hear-about">
+                                    <option value="google">Google</option>
+                                    <option value="friend">Friend</option>
+                                    <option value="advert">Advert</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </p>
+                            <p>Would you visit again?<br />
+                                <label>
+                                    <input type="radio" name="rating" value="yes" /> Yes
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="no"> No
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="maybe"> Maybe
+                                </label>
+                            </p>
+                            <p>
+                                <label for="message" class="form-label">Message</label><br />
+                                <textarea name="message" id="message" class="form-control"
+                                    placeholder="write your message here..." required></textarea>
+                            </p>
+                            <label>
+                                <input type="checkbox" name="subscribe" checked="checked" /> Sign me up for Mother Earth
+                                Newsletter
+                            </label>
+                            <br/>
+                            <button type="submit" class="submit-btn" id="submit-btn" data-toggle="modal"
+                                data-target="#myModal">Submit</button>
+                            </fieldset>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </form>
+</section>
 
+<!--- the contact modal -->
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Thank you</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <i class="fas fa-check-circle">
+                        </i> Your message has been successfully sent! <br>We will get back to you shortly.
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
-</section>
-<p><a href="{{ url_for('home_page') }}">Home</a></p>
+    </div>
 
-</section>
 
 {% endblock %}
 {% block css %}

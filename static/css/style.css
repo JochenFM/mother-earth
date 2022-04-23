@@ -6,7 +6,9 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
 :root {
         --dark:#000;
         --white:#fff;
@@ -21,13 +23,14 @@
         --montserrat: 'Montserrat', sans-serif;
         --ubuntu: 'Ubuntu Condensed', sans-serif;
 }
-html{
-    scroll-behavior: smooth;
-}
 
+html {
+  font-size: 62.5%;
+}
 
 body{
     background-color:var(--bg-color) ;
+    font-size: 1.6rem;
     }
 
 .container-fluid{
@@ -44,6 +47,7 @@ p{
     font-family: var(--montserrat);
     font-weight: 300;
 }
+
 /* ------------------------------navbar-------------- */
 .logo{
     width:20px;

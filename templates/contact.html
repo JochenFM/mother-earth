@@ -3,19 +3,19 @@
 <!--form -->
 <section id="contact" class="container">
     <div class="contact-bg">
-        <form onsubmit="return sendForm(this);" method="POST" id="form" name="contact-form">
+        <form onsubmit="sendForm(this);" method="POST" id="form" name="contact-form">
             <div class="col-12 col-lg-6">
                 <fieldset>
-                    <legend>
-                        Your Details:
-                    </legend>
-                    <label for="name">Full Names:
-        <input type="text" id="name" name="name"  placeholder="Full names..." required>
-        </label>
+                    <legend>Your Details:</legend>
+                    <label for="name">
+                        Full Names:
+                        <input type="text" id="name" name="name"  placeholder="Full names..." required>
+                    </label>
                     <br/>
-                    <label for="emailaddress">Email Address:
-        <input type="email" name="emailaddress" id="emailaddress" placeholder="Email address..." required>
-        </label>
+                    <label for="emailaddress">
+                        Email Address:
+                        <input type="email" name="emailaddress" id="emailaddress" placeholder="Email address..." required>
+                    </label>
                     <br/>
                 </fieldset>
                 <br/>
@@ -24,30 +24,33 @@
                     <p>
                         <label for="hear-about">How did you hear about Us?</label>
                         <select name="referrer" id="hear-about">
-            <option value="google">Google</option>
-            <option value="friend">Friend</option>
-            <option value="advert">Advert</option>
-            <option value="other">Other</option>
-          </select>
-                    </p>
-                    <p>Would you visit again?<br/>
-                        <label>
-          <input type="radio" name="rating" value="yes"/> Yes
-          </label>
-                        <label>
-          <input type="radio" name="rating" value="no"> No
-          </label>
-                        <label>
-          <input type="radio" name="rating" value="maybe"> Maybe
-          </label>
+                            <option value="google">Google</option>
+                            <option value="friend">Friend</option>
+                            <option value="advert">Advert</option>
+                            <option value="other">Other</option>
+                        </select>
                     </p>
                     <p>
-                        <label for="message">Comments:</label><br/>
+                        Would you visit again?
+                        <br/>
+                        <label>
+                            <input type="radio" name="rating" value="yes"/> Yes
+                        </label>
+                        <label>
+                            <input type="radio" name="rating" value="no"> No
+                        </label>
+                        <label>
+                            <input type="radio" name="rating" value="maybe"> Maybe
+                        </label>
+                    </p>
+                    <p>
+                        <label for="message">Comments:</label>
+                        <br/>
                         <textarea name="message" id="message" placeholder="write your message here..." required></textarea>
                     </p>
                     <label>
-        <input type="checkbox" name="subscribe" checked="checked"/> Sign me up for email updates
-        </label>
+                        <input type="checkbox" name="subscribe" checked="checked"/> Sign me up for email updates
+                    </label>
                     <br/>
                     <button type="submit" class="submit-btn" id="submit-btn" data-toggle="modal" data-target="#myModal">Submit</button>
                 </fieldset>

@@ -50,12 +50,10 @@
 
 </head>
 <body>
-    <!-- section homepage -->
     <div class="container-fluid">
 
-        <!-- Navbar -->
         <header>
-
+            <!-- Navbar -->
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid mr-2 ml-2">
                     <a class="navbar-brand" href="{{ url_for('home_page') }}"><img src="/static/images/logo.png"
@@ -63,6 +61,7 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
+
     
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                       <ul class="navbar-nav mr-auto align-items-center">
@@ -79,17 +78,18 @@
                             <a class="nav-link hvr-underline-from-left" href="{{ url_for('contact') }}">Contact</a>
                           </li>
                       </ul>
+
                     </div>
                 </div>
             </nav>
+            <!-- end of navbar -->
         </header>
-         
 
-        <!-- end of navbar -->
+        <!-- Page Content  -->
         {% block content %}
         {% endblock %}
                  
-     <!-- section footer -->
+        <!-- section footer -->
         <footer>
             <div class="container-fluid text-center" id="footer">
                 <div class="row">
@@ -138,8 +138,7 @@
                 </div>
             </div>
         </footer>
-    <!-- end of section footer /-->
-
+        <!-- end of section footer /-->
 
 
   {% block scripts %}

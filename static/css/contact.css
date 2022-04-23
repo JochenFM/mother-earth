@@ -1,44 +1,8 @@
-*{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-}
-:root {
-        --dark:#000;
-        --white:#fff;
-        --light:#ADAB9C;
-        --green:#77913B;
-        --darkgreen:#1C3A13;
-        --bg-color:#f1f1f1;
-        --yellow:#FFB300;
-        --orange:#FF6C03;
-        --abrilfatface: 'Abril Fatface', cursive;
-        --ibmplex: 'IBM Plex Serif', serif;
-        --montserrat: 'Montserrat', sans-serif;
-        --ubuntu: 'Ubuntu Condensed', sans-serif;
-}
-html{
-    scroll-behavior: smooth;
-}
 /* -------------------------------contact section----------------------------- */
 /* global styles*/
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: var(--abrilfatface);
-    color: #000;
-    height: auto;
-    width: 100%;
-    background-color: #3333;
-}
-
 .contact-bg {
-    background-color: #333;
+    background-color: white;
     margin: 0;
     padding: 0;
     background-image: url('assets/');

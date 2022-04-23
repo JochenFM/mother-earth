@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- section splash squiz /-->
+<div class="jumbotron">
+    <div class="image-container">
+    <img src="{{ url_for('static', filename='images/crystal-globe-resting.jpg') }}" class="img-fluid" alt="">
+    <h1 class="display-4">Dear Earthling</h1>
+    <p class="lead">You are about to enter our quiz about the earth and what we humans can do to protect our health, our families, and our livelihoods by preserving our planet. 
+        </p>
+    <hr class="my-4">
+    <p>Come and join and <span>win a prize</span></p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('home_page') }}" role="button">Back</a>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('quiz') }}" role="button">Go to Quiz</a>
+  </div>
+</div>
+
+   <!-- end of section splash squiz /-->
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="/static/css/quiz.css" type="text/css">
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+        <!-- 500 Sections -->
+        <section id="about" class="p-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md">
+                        <img src="/static/images/error.gif" class="img-fluid" alt="drake dancing all green" />
+                    </div>
+                    <div class="col-md p-5">
+                        <h2 class="text-ark">An internal error has occured.</h2>
+                        <p>No worries, just head back 
+                        
+
+                            <a href="{{ url_for('home_page') }}" class="btn btn-dark mt-3">
+                                <i class="fas fa-chevron-right"></i> Home
+                            </a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- end of section 500 /-->
+
+{% endblock %}

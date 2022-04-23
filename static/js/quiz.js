@@ -1,4 +1,3 @@
-Jochen
 var modalCorrect = document.getElementById('modal-correct')
 
 modalCorrect.addEventListener('shown.bs.modal', function () {
@@ -143,6 +142,5 @@ for (const answer of answersContainerRef) {
 function saveHighScore() {
     let score = parseInt(scoreRef.innerText);
     localStorage.setItem('score', score);
-    window.location.assign("highscores.html");
+    window.location.assign("/score");
 }
-main

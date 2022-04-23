@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="top-game-area">
+    <div class="game-area" id="final-page">
+        <h1 class="heading" id="final-heading">Your Score is!</h1>
+        <h2 id="finalScore">0</h2>
+        <p class="rank"> 1-5 : In pilot School</p>
+        <p class="rank"> 6-8 : 1st Officer</p>
+        <p class="rank"> 9-10 : High Ranked Commander</p>
+        <form>
+            <input type="text" name="username" id="username" placeholder="username">
+        </form>
+        <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>Save</button>
+        <button type="button" onclick="window.location.href='/'" class="btn" id="start">Go Home</button>
+    </div>
+</section>
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="/static/css/quiz.css">
+{% endblock %}
+{% block scripts %}
+<script src="/static/js/highscores.js"></script>
+{% endblock %}

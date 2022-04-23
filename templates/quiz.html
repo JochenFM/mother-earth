@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+
+        <!-- section quiz -->
+        <section class="top-game-area"> 
+            <div class="game-area">      
+                <div id="game-area">
+                    <h1 id="question">question</h1>
+                    <div class="answers-container">
+                        <p class="answers-prefix">A</p>
+                        <p class="answer-text" data-number="1">Choice1</p>
+                    </div>
+                    <div class="answers-container">
+                        <p class="answers-prefix">B</p>
+                        <p class="answer-text" data-number="2">Choice2</p>
+                    </div>
+                    <div class="answers-container">
+                        <p class="answers-prefix">C</p>
+                        <p class="answer-text" data-number="3">Choice3</p>
+                    </div>
+                    <div class="answers-container">
+                        <p class="answers-prefix">D</p>
+                        <p class="answer-text" data-number="4">Choice4</p>
+                    </div>
+                    <div>
+                        <img id="fit-picture">
+                    </div>
+                    <div class="controls" id="control">
+                        <button onclick="renderNextQuestion()" class="btn" id="next-question" >Next Question</button>
+                        <button onclick="saveHighScore()" class="btn" id="finish" >Finish</button>
+                    </div>
+                    <div class="tally-area">
+                        <p class="tally">Correct Answers <span id="score">0</span></p>
+                        <p class="tally">Incorrect Answers <span id="incorrect">0</span></p>
+                    </div>
+                </div>  
+            </div>
+        </section>
+    
+    
+        <!-- end of section quiz /-->
+
+{% endblock %}
+{% block scripts %}
+<script src="/static/js/quiz.js"></script>
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="/static/css/quiz.css" type="text/css">
+{% endblock %}

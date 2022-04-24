@@ -130,8 +130,6 @@ legend {
 }
 
 
-
-
 .submit-btn {
     margin-top:3rem;
     padding: 13px 45px;
@@ -150,15 +148,11 @@ legend {
     outline: none;
 }
 
-
-
-//*MODAL*/
+/*MODAL*/
 
 .hide {
     display: none;
 }
-
-
 
 /* FOOTER */
 

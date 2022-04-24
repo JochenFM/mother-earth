@@ -1,25 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
         <!-- start of hero section -->
-        <section id="hero">
-
-            <div class="container hero-container h-100 mt-5">
-                <!-- we need a better photo for the background-->
-                <div class="row h-100">
-                    <div class="col-12 col-md-6 d-flex flex-column justify-content-center hero-column mt-5">
-                        <p class="text-light">
-                            "If you truly love nature, you will find beauty everywhere."<br>
-                            Vincent van Gogh
-                        </p>
-                        <div class="col-12 col-md-6 d-flex flex-column justify-content-center cta-column mt-5">
-                            <div class="">
-                                <a href="{{ url_for('about') }}" role="button" class="btn btn-warning btn-lg explore-cta">Explore More
-                                    !!</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <section class="hero">
+            <div class="img-wrapper">
+                <img src="/static/images/background-image.jfif" alt="">
+            </div>
+            <div class="banner">
+                <h1>Save Mother Nature</h1>
+                <p>"If you truly love nature, you will find beauty everywhere." -
+Vincent van Gogh</p>
+                  <button> <a href="{{ url_for('about') }}" role="button" class="explore-cta">Explore More
+                                    </a></button>
+                                    
+            </div>
         </section>
+           
         <!--  end of section homepage /-->
 
 {% endblock %}

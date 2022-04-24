@@ -8,7 +8,7 @@
 <section class="container-fluid">
   <div class="jumbotron jumbotron-fluid">
 
-    <div class="container card bg-light hover-zoom">
+    <div class="container card bg-light">
       <h1 class="display-4"><i>Mother Earth</i> Quiz</h1>
       <h2 class ="lead">Test your earthy knowledge</h2>
       <hr class="my-4">
@@ -29,9 +29,10 @@
         <p>
           <small class="text-muted">Remember to always take care of your planet!</small>
         </p>
-
-        <a class="btn btn-warning text-dark float-right" href="{{ url_for('home_page') }}" role="button">Back</a>
-        <a class="btn btn-warning text-dark float-right" href="{{ url_for('quiz') }}" role="button">Go to Quiz</a>
+        <div class ="text-right">
+        <a class="btn text-dark" href="{{ url_for('quiz') }}" role="button">Go to Quiz</a>
+        <a class="btn text-dark mr-2" href="{{ url_for('home_page') }}" role="button">Back</a>
+      </div>
       </div>
     </div>
   </div>

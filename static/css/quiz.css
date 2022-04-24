@@ -12,6 +12,10 @@
     background-color: #faf0c4;
 }
 
+.btn {
+    background: #FF6C03;
+    
+}
 
 .top-game-area {
     display: grid;

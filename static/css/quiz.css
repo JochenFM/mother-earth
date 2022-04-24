@@ -1,4 +1,15 @@
 /* for quiz_splash.html*/
+.jumbotron {
+    color: rgb(129, 14, 14);
+    background-image: url("/static/images/crystal-globe-resting.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+
+/* for quiz_splash.html
 
 .jumbotron{
 
@@ -6,7 +17,9 @@
     background-size: cover;
     background-position: center;
 
-}
+}*/
+
+
 
 .top-game-area {
     display: grid;

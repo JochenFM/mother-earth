@@ -1,10 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
 
+
 <!-- section splash squiz /-->
+
 
 <section class="container-fluid" id="quiz_splash">
   <div class="jumbotron jumbotron">
+
     <div class="container card bg-light hover-zoom">
       <h1 class="display-4">Mother Earth Quiz</h1>
       <p>Test your Earthy knowledge</p>
@@ -14,6 +17,7 @@
         <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ex tempora illo minus quos
           repudiandae nobis ipsum molestias ullam maxime?
           loved ones! &nbsp;<a class="" href="" target="_blank" display="none">Read more</a>
+
         </p>
         <h3>
           <span class="mr-2">
@@ -30,11 +34,14 @@
         <p>
           <small class="text-muted">Remember to always take care of your planet!</small>
         </p>
+
         <a class="btn btn-primary btn-lg" href="{{ url_for('quiz') }}" role="button">Go to Quiz</a>
       </div>
     </div>
   </div>
   </div>
+
+
 
 </section>
 
@@ -43,7 +50,9 @@
 {% block css %}
 <link rel="stylesheet" href="/static/css/quiz.css" type="text/css">
 
+
 {% endblock %}
 {% block js%}
 <script src="/static/js/quiz.js"></script>
 {% endblock %}
+

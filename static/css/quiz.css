@@ -1,49 +1,20 @@
-
-/* _____________________google fonts here------------ */
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=IBM+Plex+Serif:wght@100;200;300;400&family=Montserrat:wght@300&family=Ubuntu+Condensed&display=swap');
-
-/* -----------------------------global styles--------------------------- */
-*{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-}
-
-:root {
-        --dark:#000;
-        --white:#fff;
-        --light:#ADAB9C;
-        --green:#77913B;
-        --darkgreen:#1C3A13;
-        --bg-color:#f1f1f1;
-        --yellow:#FFB300;
-        --orange:#FF6C03;
-        --gradient:linear-gradient(to bottom right, #ff6c03, #B2EBF2);
-        --abrilfatface: 'Abril Fatface', cursive;
-        --ibmplex: 'IBM Plex Serif', serif;
-        --montserrat: 'Montserrat', sans-serif;
-        --ubuntu: 'Ubuntu Condensed', sans-serif;
-}/* for quiz_splash.html*/
-
+/* for quiz_splash.html*/
 .jumbotron {
-  color: var(--darkgreen);
-  background-image: url("/static/images/crystal-globe-resting.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  
+    background-image: url("/static/images/crystal-globe-resting.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+
+.jumbotron .card {
+    background-color: #faf0c4;
 }
 
-.quiz-header{
-    font-family: var(--abrilfatface);
-    font-size: 4rem;
+.btn {
+    background: #FF6C03; 
 }
-.card{
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-
-/* csss */
 
 .top-game-area {
     display: grid;

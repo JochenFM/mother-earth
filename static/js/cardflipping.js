@@ -25,69 +25,69 @@ const questionlist = [
             {text: "Clouds", "correct": false}
         ]
     },
-    // {
-    //     question: "How much of the worlds oxygen is produced by just the Amazon rainforest?",
-    //     answers: [
-    //         {text: "1%", "correct": false},
-    //         {text: "5%", "correct": false},
-    //         {text: "10%", "correct": false},
-    //         {text: "20%", "correct": true}
-    //     ]
-    // },
-    // {
-    //     question: "How much oxygen does an average 50-year-old tree provide?",
-    //     answers: [
-    //         {text: "Enough for 1 person per year", "correct": false},
-    //         {text: "Enough for 4 person per year", "correct": true},
-    //         {text: "Enough for 8 person per year", "correct": false},
-    //         {text: "Enough for 10 person per year", "correct": false}
-    //     ]
-    // },
-    // {
-    //     question: "When was the first earth day celebrated?",
-    //     answers: [
-    //         {text: "1970", "correct": true},
-    //         {text: "1985", "correct": false},
-    //         {text: "1990", "correct": false},
-    //         {text: "2005", "correct": false}
-    //     ]
-    // },
-    // {
-    //     question: "In its lifetime, one reusable bag can prevent the use of how many plastic bags?",
-    //     answers: [
-    //         {text: "50", "correct": false},
-    //         {text: "300", "correct": false},
-    //         {text: "600", "correct": true},
-    //         {text: "1000", "correct": false}
-    //     ]
-    // },
-    // {
-    //     question: "What percent of Earths water can be used by humans?",
-    //     answers: [
-    //         {text: "Less than one percent", "correct": true},
-    //         {text: "Less than five percent", "correct": false},
-    //         {text: "Less than ten percent", "correct": false},
-    //         {text: "Less than fifteen percent", "correct": false}
-    //     ]
-    // },
-    // {
-    //     question: "Which of these species are threatened by global warming?",
-    //     answers: [
-    //         {text: "Koala", "correct": false},
-    //         {text: "Clownfish", "correct": false},
-    //         {text: "Arctic fox", "correct": false},
-    //         {text: "All of the above", "correct": true}
-    //     ]
-    // },
-    // {
-    //     question: "What is most frequently found in beach clean-ups?",
-    //     answers: [
-    //         {text: "Glass", "correct": false},
-    //         {text: "Shoes", "correct": false},
-    //         {text: "Pieces of Plastic", "correct": true},
-    //         {text: "Jewellery", "correct": false}
-    //     ]
-    // }
+    {
+        question: "How much of the worlds oxygen is produced by just the Amazon rainforest?",
+        answers: [
+            {text: "1%", "correct": false},
+            {text: "5%", "correct": false},
+            {text: "10%", "correct": false},
+            {text: "20%", "correct": true}
+        ]
+    },
+    {
+        question: "How much oxygen does an average 50-year-old tree provide?",
+        answers: [
+            {text: "Enough for 1 person per year", "correct": false},
+            {text: "Enough for 4 person per year", "correct": true},
+            {text: "Enough for 8 person per year", "correct": false},
+            {text: "Enough for 10 person per year", "correct": false}
+        ]
+    },
+    {
+        question: "When was the first earth day celebrated?",
+        answers: [
+            {text: "1970", "correct": true},
+            {text: "1985", "correct": false},
+            {text: "1990", "correct": false},
+            {text: "2005", "correct": false}
+        ]
+    },
+    {
+        question: "In its lifetime, one reusable bag can prevent the use of how many plastic bags?",
+        answers: [
+            {text: "50", "correct": false},
+            {text: "300", "correct": false},
+            {text: "600", "correct": true},
+            {text: "1000", "correct": false}
+        ]
+    },
+    {
+        question: "What percent of Earths water can be used by humans?",
+        answers: [
+            {text: "Less than one percent", "correct": true},
+            {text: "Less than five percent", "correct": false},
+            {text: "Less than ten percent", "correct": false},
+            {text: "Less than fifteen percent", "correct": false}
+        ]
+    },
+    {
+        question: "Which of these species are threatened by global warming?",
+        answers: [
+            {text: "Koala", "correct": false},
+            {text: "Clownfish", "correct": false},
+            {text: "Arctic fox", "correct": false},
+            {text: "All of the above", "correct": true}
+        ]
+    },
+    {
+        question: "What is most frequently found in beach clean-ups?",
+        answers: [
+            {text: "Glass", "correct": false},
+            {text: "Shoes", "correct": false},
+            {text: "Pieces of Plastic", "correct": true},
+            {text: "Jewellery", "correct": false}
+        ]
+    }
 ]
 
 // Event listener for the next button

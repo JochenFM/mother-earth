@@ -72,6 +72,24 @@ def score():
     """
     return render_template("score.html")    
 
+@app.route("/places", methods=["GET", "POST"])
+def places():
+    """
+    This route gives all the places from the database.
+    This route behaves like an API endpoint.
+    """
+    if request.method == "POST":
+        score_data = request.get_json()
+        result = mongo.db.quiz_rewards.insert_one(score_data)
+        return jsonify(score_data)
+
+    quiz_rewards_mongo = list(mongo.db.quiz_rewards.find())
+    quiz_rewards = []
+    for item in quiz_rewards_mongo:
+        item.pop("_id")
+        quiz_rewards.append(item)
+    return jsonify(quiz_rewards)
+
 @app.errorhandler(404)
 def page_not_found(e):
     """

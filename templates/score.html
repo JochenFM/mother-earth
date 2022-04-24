@@ -1,9 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
-<section class="top-game-area">
-    <div class="container">
+<section id="score" class="container">
         <div class="row">
-            <div class="col col-4">
+            <div class="col col-4 resource-container">
                 <span style="size: 2em;">Please fill the name of your tree and click on the map to choose your location where you will plant your tree.</span>
                 <br>
                 <br>
@@ -12,11 +11,10 @@
                 <br>
                 <button type="submit" class="" id="saveScoreBtn" onclick="sendDataToServer(event)">Send</button>
             </div>
-            <div class="col col-8">
+            <div class="col col-8 resource-container">
                 <div id="map">MAP</div>         
             </div>
         </div>
-    </div>
 </section>
 {% endblock %}
 {% block css %}

@@ -26,8 +26,7 @@ html{
 }
 
 body {
-    font-family: var(--ibmplex);
-    
+    font-family: var(--ibmplex); 
     color: #000;
     height: auto;
     width: 100%;
@@ -38,8 +37,6 @@ body {
     font-family: var(--abrilfatface);
     color:var(--white);
     font-size: 7rem;
-
-
     z-index: 999;
     font-weight: 400;
     letter-spacing: 0.1rem;
@@ -262,6 +259,7 @@ legend {
     .submit-btn {
         width: 250px;
     }
+}
     
    
 label {
@@ -280,4 +278,7 @@ label {
 
 .fa-user{
     color:var(--darkgreen);
+}
+.fa-envelope{
+    color:var(--darkgreen)
 }

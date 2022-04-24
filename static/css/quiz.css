@@ -13,8 +13,7 @@
 }
 
 .btn {
-    background: #FF6C03;
-    
+    background: #FF6C03; 
 }
 
 .top-game-area {
@@ -315,3 +314,4 @@ input {
         width: 25rem;
     }
 }
+

@@ -1,7 +1,9 @@
+from crypt import methods
 from logging import raiseExceptions
 from signal import raise_signal
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify, request
 import os
+from flask_pymongo import PyMongo
 
 if os.path.exists("env.py"):
     import env
@@ -9,6 +11,10 @@ if os.path.exists("env.py"):
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY")
+app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
+app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
+mongo = PyMongo(app)
+
 
 @app.route("/")
 def home_page():
@@ -52,12 +58,12 @@ def contact():
     """
     return render_template("contact.html")
 
-@app.route("/highscores")
-def highscores():
+@app.route("/plant_tree")
+def plant_tree():
     """
-    This route displays the highscores webpage.
+    This route displays the plant_tree webpage.
     """
-    return render_template("highscores.html")
+    return render_template("plant_tree.html")
   
 @app.route("/score")
 def score():
@@ -65,6 +71,24 @@ def score():
     This route displays the score webpage.
     """
     return render_template("score.html")    
+
+@app.route("/places", methods=["GET", "POST"])
+def places():
+    """
+    This route gives all the places from the database.
+    This route behaves like an API endpoint.
+    """
+    if request.method == "POST":
+        score_data = request.get_json()
+        result = mongo.db.quiz_rewards.insert_one(score_data)
+        return jsonify(score_data)
+
+    quiz_rewards_mongo = list(mongo.db.quiz_rewards.find())
+    quiz_rewards = []
+    for item in quiz_rewards_mongo:
+        item.pop("_id")
+        quiz_rewards.append(item)
+    return jsonify(quiz_rewards)
 
 @app.errorhandler(404)
 def page_not_found(e):

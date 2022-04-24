@@ -1,41 +1,45 @@
 {% extends "base.html" %}
 {% block content %}
 
-<section class="container-fluid" id="quiz">
-  <div class="jumbotron">
-  <h1 class="display-4 text-center quiz-header"><img src="/static/images/logo.png"  style="width:70px; opacity: 0.6;" alt="">
-        Mother Earth Quiz<img src="/static/images/logo.png"  style="width:70px; opacity:0.6" alt=""></h1>
-    <div class="container card bg-light h-100">
-      <!-- Main page -->
-        <div class="main">
-          <!-- Number of Question  -->
-          <div class="wrapper" id="pages">
-            <span id="quizNumber">1</span><span>/7</span>
-          </div>
-
-          <!-- Quiz Question -->
-          <div class="quiz-questions" id="display-area">
-            <p id="question"></p>
-            <ul id="answer">
-            </ul>
-
-            <div id="quiz-results">
-              <button type="button" name="button" class="submit" id="submit">Submit</button>
-            </div>
-          </div>
-
+        <!-- section quiz -->
+        <div class="container-fluid">
+         <div class="row">
+             <div class="col-12 counter-container">
+                 <h2 class="answer-count d-inline p-2">Correct answers: <span id="answers-score">0</span></h2> 
+                 <br>
+                 <h2 class="drinks-count d-inline p-2">Wrong answers: <span id="drinks-score">0</span></h2>                             
+             </div>
+         </div>
+     
+         <div class="row">
+             <div id="cardflipping" class="col-12">
+                 <div class="question-card" id="question-card">
+                     <div class="question-card-inner">
+                         <div class="question-card-front">
+                             <img class="question-card-front-image" src="assets/images/cardback.png" alt="Card Back">
+                         </div>
+                         <div class="question-card-back">
+                             <h1>Question</h1>
+                             <div id="question-container">
+                                 <div id="question" class="question-words">Press the Start Button for the questions to
+                                     appear
+                                 </div>
+                                 <div id="answer-buttons" class="btn-grid"></div>
+                             </div>
+                             <button id="next-btn" class="next-btn btn hide btn-success">Next <i class="far fa-hand-point-right"></i></button>
+                             <a href="{{ url_for('score') }}"><button id="END-btn" class="next-btn btn hide btn-danger">END</button></a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
         </div>
-
-        <canvas id="canvas"></canvas>
-
-    </div>
-    </div>
-</section>
- 
+     </div>
+        <!-- end of section quiz /-->
+<!-- script tags -->
 {% endblock %}
 {% block scripts %}
-<script src="/static/js/quiz.js"></script>
+<script src="/static/js/cardflipping.js"></script>
 {% endblock %}
 {% block css %}
-<link rel="stylesheet" href="/static/css/quiz.css" type="text/css">
+<link rel="stylesheet" href="/static/css/cards.css" type="text/css">
 {% endblock %}

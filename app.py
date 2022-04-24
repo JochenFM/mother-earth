@@ -58,12 +58,12 @@ def contact():
     """
     return render_template("contact.html")
 
-@app.route("/highscores")
-def highscores():
+@app.route("/plant_tree")
+def plant_tree():
     """
-    This route displays the highscores webpage.
+    This route displays the plant_tree webpage.
     """
-    return render_template("highscores.html")
+    return render_template("plant_tree.html")
   
 @app.route("/score")
 def score():

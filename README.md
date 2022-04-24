@@ -8,7 +8,7 @@ a quiz app feature, tree planting donation feature and some extra resources.
 The team members for this project were: Nigel Doberer, Salwin Achankunju_5P, Yusuf F, Jochen Mayer, Eugenia Muscat & Sandra Atino under the guidance of our facilitator, DaveHorrocks_ci.
 
 
-![Mock-up of site](images/readme/amiresponsive.png)
+![Mock-up of site](static/images/motherearthmockup.png)
 
 Deployed website can be viewed [here](http://mother-earth-hackathon.herokuapp.com/).
 
@@ -35,11 +35,13 @@ Deployed website can be viewed [here](http://mother-earth-hackathon.herokuapp.co
 * **Responsive design** - the site has been developed using Bootstrap and custom CSS to ensure the site is responsive across all devices.
 
 
-* **Social media links** - In the footer there are links to various social media links.
-    ![Footer](images/readme/footer.png)
+* **Resources ** - In the resources page there are links to various social earth day links.
+    ![Resources page](static/images/resources.png)
 
-* **About Page** - Gives users a good understanding of why the site exists and what its mission is.
-    ![About page](images/readme/about.png)
+ about page Gives users a good understanding of why the site exists and what its mission is.
+
+* **Contact page** - The user can reach out to the site owner/business for many querries.
+    ![Contact page](static/images/contactpage.png)
 
 
 ### Wireframes
@@ -66,7 +68,8 @@ A simple clean design with easy to use buttons handles the navigation throughout
 
 ### Colour Scheme
 
-![shutterstock color palettes](https://www.shutterstock.com/blog/color-palettes-for-websites)
+[shutterstock color palettes](https://www.shutterstock.com/blog/color-palettes-for-websites)
+![color palette](/static/images/colorpalette.png)
 
 
 ### Images
@@ -78,7 +81,7 @@ A simple clean design with easy to use buttons handles the navigation throughout
  [Google Fonts](https://fonts.google.com/) was used to select the fonts.
   * The main font used throughout the site is '---------' which belongs to the sans-serif typeface family. The font is clean and elegant, making it a good choice for web design.
 
- * We have used the '---------------' font for titles and headers all over the site.
+ * We have used the 'Abril + Fatface' font for titles and headers all over the site.
 
  * Sans Serif is set as the fallback font if for any reason the main fonts aren't being imported into the site correctly.
 
@@ -88,10 +91,11 @@ A simple clean design with easy to use buttons handles the navigation throughout
 - HTML
 - CSS3
 - JavaScript
+- Flask
 - Python
 
 ### Frameworks and Libraries
-- hover css
+- hover css for hover effects through out the site.
 - animate.css
 
 - [Am I Responsive?](http://ami.responsivedesign.is/) was used to create the mock ups.

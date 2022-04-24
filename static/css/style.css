@@ -45,6 +45,7 @@ body a{
     color:var(--white)!important;
     text-decoration: none;  
 }
+
 li{
   list-style: none;
 }
@@ -81,8 +82,7 @@ h4 {
 .navbar {
   background: var(--darkgreen);
   z-index: 9999;
-  padding-left: 150px!important;
-  padding-right: 150px!important;
+ 
 }
 
 .logo {
@@ -104,6 +104,12 @@ h4 {
   float: right;
 }
 
+@media(min-width: 992px){
+  .navbar-expand-lg{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
 
 /* -----------------------------hero section ----------------------*/
 /* Hero Section */
@@ -115,6 +121,7 @@ h4 {
     perspective: 100rem;
     overflow: hidden;
     padding-top: 85px;
+    
 }
 .img-wrapper{
     width:100%;
@@ -278,11 +285,12 @@ h4 {
 div .col {
     padding: 5px;
 }
-
+.resource-container{
+  margin-top: 100px;
+}
 .resources{
-  padding: 0;
-  margin: 0;
-  font-family: var(--ibmplex);
+  margin-top: 50px;
+  font-family: var(--abrilfatface);
   color: var(--darkgreen);
   font-weight: 600;
 }
@@ -299,7 +307,7 @@ div .col {
     color: var(--white);
     border-radius: 20px;
     padding: 10px;
-    font-family: var(--ibmplex);
+    font-family: var(--abrilfatface);
 
 }
 
@@ -308,7 +316,7 @@ div .col {
     color: var(--yellow);
     font-size: 20px;
     font-weight: 500;
-    font-family: var(--abrilfatface);
+    font-family: var(--ibmplex);
     text-shadow: 2px 2px var(--dark);
 }
 
@@ -332,7 +340,10 @@ div .col {
     font-size: 30px;
 }
 
-
+/* to remove white background from img*/
+#waterdrop-img{
+  mix-blend-mode: multiply;
+}
 
 @media only screen and (min-width: 768px) {
 
@@ -341,11 +352,12 @@ div .col {
         padding-top: 60px;
     }
 
-    #bulb-img {
+    #waterdrop-img {
         max-width: 70%;
         float: right;
         margin-left: 70%;
         margin-bottom: 50px;
+        background-color: none;
     }
 
     .subheading-resources {

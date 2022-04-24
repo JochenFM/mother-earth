@@ -1,70 +1,37 @@
 {% extends "base.html" %}
 {% block content %}
 
-        <!-- section quiz -->
-        <section class="top-game-area"> 
-            <div class="game-area">      
-                <div id="game-area">
-                    <h1 id="question">question</h1>
-                    <div class="answers-container">
-                        <p class="answers-prefix">A</p>
-                        <p class="answer-text" data-number="1">Choice1</p>
-                    </div>
-                    <div class="answers-container">
-                        <p class="answers-prefix">B</p>
-                        <p class="answer-text" data-number="2">Choice2</p>
-                    </div>
-                    <div class="answers-container">
-                        <p class="answers-prefix">C</p>
-                        <p class="answer-text" data-number="3">Choice3</p>
-                    </div>
-                    <div class="answers-container">
-                        <p class="answers-prefix">D</p>
-                        <p class="answer-text" data-number="4">Choice4</p>
-                    </div>
-        
-                    <div class="controls" id="control">
-                        <button onclick="renderNextQuestion()" class="btn" id="next-question" >Next Question</button>
-                        <button onclick="saveHighScore()" class="btn" id="finish" >Finish</button>
-                    </div>
-                    <div class="tally-area">
-                        <p class="tally">Correct Answers <span id="score">0</span></p>
-                        <p class="tally">Incorrect Answers <span id="incorrect">0</span></p>
-                    </div>
-                </div>  
+<section class="container-fluid" id="quiz">
+  <div class="jumbotron">
+  <h1 class="display-4 text-center quiz-header"><img src="/static/images/logo.png"  style="width:70px; opacity: 0.6;" alt="">
+        Mother Earth Quiz<img src="/static/images/logo.png"  style="width:70px; opacity:0.6" alt=""></h1>
+    <div class="container card bg-light h-100">
+      <!-- Main page -->
+        <div class="main">
+          <!-- Number of Question  -->
+          <div class="wrapper" id="pages">
+            <span id="quizNumber">1</span><span>/7</span>
+          </div>
+
+          <!-- Quiz Question -->
+          <div class="quiz-questions" id="display-area">
+            <p id="question"></p>
+            <ul id="answer">
+            </ul>
+
+            <div id="quiz-results">
+              <button type="button" name="button" class="submit" id="submit">Submit</button>
             </div>
-        </section>
- 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-    Launch demo modal
-  </button>
-<!--Modal for correct answer-->
+          </div>
 
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Good job! You help saving our planet</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
         </div>
-        <div class="modal-body">
-          <p>
-            Actually, more than half of our breathable oxygen comes from the ocean, the majority of which is provided by tiny plants called phytoplankton.
-            </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <!--button type="button" class="btn btn-primary">Save changes</button-->
-        </div>
-      </div>
+
+        <canvas id="canvas"></canvas>
+
     </div>
-  </div>
-
-        <!-- end of section quiz /-->
-<!-- script tags -->
+    </div>
+</section>
+ 
 {% endblock %}
 {% block scripts %}
 <script src="/static/js/quiz.js"></script>

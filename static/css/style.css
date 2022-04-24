@@ -81,7 +81,8 @@ h4 {
 .navbar {
   background: var(--darkgreen);
   z-index: 9999;
-  position: sticky;
+  padding-left: 150px!important;
+  padding-right: 150px!important;
 }
 
 .logo {
@@ -103,6 +104,7 @@ h4 {
   float: right;
 }
 
+
 /* -----------------------------hero section ----------------------*/
 /* Hero Section */
 /* landing page */
@@ -112,6 +114,7 @@ h4 {
     position: relative;
     perspective: 100rem;
     overflow: hidden;
+    padding-top: 85px;
 }
 .img-wrapper{
     width:100%;
@@ -233,6 +236,16 @@ h4 {
 /*------------------end media query for homepage*--------------------/
 
 /*------------------------------about page----------------------*/
+.about{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: auto;
+  overflow: hidden;
+}
+
+.about-container{
+  padding-top: 200px;
+}
 .about p{
   font-family: var(--ibmplex);
   font-size: 15px;
@@ -245,7 +258,7 @@ h4 {
 
 .about-btn{
     width:20rem;
-    background-color: var(--darkgreen);
+    background-color: var(--orange);
     padding: 14px 0;
     border:none;
     font-family: var(--ibmplex);
@@ -256,9 +269,9 @@ h4 {
     text-shadow:0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
     box-shadow:0 0.3rem 0.5rem rgba(5, 161, 70, 0.4);
     cursor: pointer;
+    margin-top: 7.5px;
 }
 
-  
 /* -----------------------resources page------------------------ */
 
 
@@ -346,6 +359,7 @@ div .col {
 #footer {
     background-color: var(--bg-color);
     padding:60px;
+    margin-top: 35px;
 }
 
 #footer h2 {

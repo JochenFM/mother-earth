@@ -5,20 +5,15 @@
 <!-- section splash squiz /-->
 
 
-<section class="container-fluid" id="quiz_splash">
-  <div class="jumbotron jumbotron">
+<section class="container-fluid">
+  <div class="jumbotron jumbotron-fluid">
 
     <div class="container card bg-light hover-zoom">
-      <h1 class="display-4">Mother Earth Quiz</h1>
-      <p>Test your Earthy knowledge</p>
-
-      <div class="instructions">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem pariatur reprehenderit
-        possimus a velit voluptates libero voluptate fugiat non dolor?
-        <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ex tempora illo minus quos
-          repudiandae nobis ipsum molestias ullam maxime?
-          loved ones! &nbsp;<a class="" href="" target="_blank" display="none">Read more</a>
-
-        </p>
+      <h1 class="display-4"><i>Mother Earth</i> Quiz</h1>
+      <h2 class ="lead">Test your earthy knowledge</h2>
+      <hr class="my-4">
+      <h3 class="lead">You are about to enter our quiz about the Earth and what we humans can do to protect 
+        our health, our families, and our livelihoods by preserving her.</h3>
         <h3>
           <span class="mr-2">
             <img src="/static/images/logo.png" width="50" alt="" class="icons"></span>HOW TO PLAY<span><img
@@ -26,16 +21,17 @@
           </span>
         </h3>
         <ul class="howto">
-          <li>Press start a new game below.</li>
-          <li>Answer the question on the card.</li>
-          <li>If you're wrong, smile(optional).</li>
+          <li>Press the button below to go to quiz</li>
+          <li>Read the question and choose your answer from the four options on the cards</li>
+          <li>If you're wrong, smile (optional).</li>
           <li>Move on to the next.</li>
         </ul>
         <p>
           <small class="text-muted">Remember to always take care of your planet!</small>
         </p>
 
-        <a class="btn btn-primary btn-lg" href="{{ url_for('quiz') }}" role="button">Go to Quiz</a>
+        <a class="btn btn-warning text-dark float-right" href="{{ url_for('home_page') }}" role="button">Back</a>
+        <a class="btn btn-warning text-dark float-right" href="{{ url_for('quiz') }}" role="button">Go to Quiz</a>
       </div>
     </div>
   </div>

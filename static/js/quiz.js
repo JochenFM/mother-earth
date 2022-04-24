@@ -144,3 +144,10 @@ function saveHighScore() {
     localStorage.setItem('score', score);
     window.location.assign("/score");
 }
+
+// quiz splash screen
+$(".jumbotron").css({ height: $(window).height() + "px" });
+
+$(window).on("resize", function() {
+  $(".jumbotron").css({ height: $(window).height() + "px" });
+});

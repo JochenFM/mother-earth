@@ -47,9 +47,18 @@ The wireframes for this project were developed using [Balsamiq](https://balsamiq
 
 * **Desktop Wireframes:**
         
-    ![Home page]() 
-    ![pop-up-wireframe]() 
-    ![About page]
+    Home page
+    ![Home page](wireframes/Landing%20page.png) 
+    Game page
+    ![Quiz page](wireframes/Game%20page.png)
+    About page
+    ![About page](wireframes/About.png)
+    Highscores
+    ![Highscores](wireframes/Highscores.png)
+    Low score message
+    ![Low score message](wireframes/Low%20score%20message.png)
+    Score page max score
+    ![Score page max score](wireframes/Score%20page%20max%20score.png)
 
 * **Mobile Wireframes:**
 

@@ -42,8 +42,12 @@ Deployed website can be viewed [here](http://mother-earth-hackathon.herokuapp.co
 
 * **Contact page** - The user can reach out to the site owner/business for many querries.
     ![Contact page](static/images/contactpage.png)
+* **Quiz page** - The visitors can make a quiz about Earth Day. After they finish the quiz they have the possibility to choose a name and a location on the map for planting their tree.
+    ![Quiz page](static/images/quiz.png)
 
-
+    ![Score page](static/images/score.png)
+* **Plant a tree page** - The visitors can see a map with locations where other users planted their trees.
+    ![Plant a tree page](static/images/plant_tree.png)
 ### Wireframes
 The wireframes for this project were developed using [Balsamiq](https://balsamiq.com/).
 
@@ -62,13 +66,7 @@ The wireframes for this project were developed using [Balsamiq](https://balsamiq
     Score page max score
     ![Score page max score](wireframes/Score%20page%20max%20score.png)
 
-* **Mobile Wireframes:**
 
-     ![Mobile Home page]()  
-     ![Mobile About page]() 
-
-
-### Changes to Wireframes
 ## Design
 
 ### Structure
@@ -95,6 +93,23 @@ A simple clean design with easy to use buttons handles the navigation throughout
  * Sans Serif is set as the fallback font if for any reason the main fonts aren't being imported into the site correctly.
 
 ## Technologies
+### Backend functionality
+The backend functionality is realized with a combination of Flask, MongoDB and custom made APIs.
+The first API endpoint is GET /places which returns a JSON structure containing data from quiz_rewards MongoDB collection.
+The second API endpoint is POST /places which receives JSON data from JS and stores the data in the quiz_rewards MongoDB collection.
+
+After the visitor completes the quiz, he/she will land on the /score page.
+
+In there he/she will need to give a name for the tree and choose a location by clicking on the map.
+
+After that, when clicking ```Send```, the JS client side functionality will send a POST API request to /scores containting data about name, latitude, longitude, score.
+
+The backend will store that data in MongoDB.
+
+After calling the POST API, the user is redirected to ```Plant a tree``` view.
+
+The /plant_tree view displays a map showing all the locations where quiz visitors planted the trees.
+This is done by a JS functionality which obtains data from GET /score API endpoint and puting pins on the map.
 
 ### Languages
 - HTML
@@ -116,6 +131,12 @@ A simple clean design with easy to use buttons handles the navigation throughout
 - [GitPod](https://www.gitpod.io/) was used as the IDE to develop the project.
 - [GitHub Projects]() was used to manage the workflow of the project.
 - [Google Fonts](https://fonts.google.com/) were used to select fonts for the site.
+- <a href="https://developers.google.com/maps/documentation" target="_blank">Google Maps</a> (used to choose a specific location on the map)
+- [MongoDB](https://www.mongodb.com/1) is the fully managed cloud database service used for the project.
+- [Heroku](https://dashboard.heroku.com/) is the cloud platform to deploying the app.
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/) is the web framework used to provide libraries, tools and technologies for the app.
+- [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) is used for Python templating
+- [Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/) is used for password hashing and authentication and autohorization.
 
 ## Testing
 
@@ -139,17 +160,72 @@ A simple clean design with easy to use buttons handles the navigation throughout
 
 ## Deployment
 
-The following steps were followed to deploy the project to a live website in GitHub, using Github Pages:
+#### Requirements 
+- Python3 
+- Github account 
+- MongoDB account 
+- Heroku account
 
-- Ensure changes have been added and commited in Gitpod and pushed to GitHub.
-- Login to GitHub.
-- Locate the relevant repository on GitHub. This is the repository for...
-- At the top of the repository, locate the 'Settings' link and click on this.
-- On the left of the page, under Options, scroll down until you get to Pages and click on Pages.
-- Under Source, in the first box called "None", click the dropdown and select "master".
-- Then select Save.
-- The page will refresh and you will see a link above the Save button. This is the link to the live site. Note that it may take a few minutes for the site to be deployed.
-- There are no differences between the deployed version and the development version of this project.
+#### Clone the project 
+To make a local clone, follow the following steps. 
+1. Log in to GitHub and go to the repository. 
+2. Click on the green button with the text **"Code".**
+3. Click on **"Open with GitHub Desktop"** and follow the prompts in the GitHub Desktop Application or follow the instructions from **[this link](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop)** to see how to clone the repository in other ways. 
+
+#### Working with the local copy
+1. Install all the requirements: Go to the workspace of your local copy. In the terminal window of your IDE type: **pip3 install -r requirements.txt**.
+2. Create a database in MongoDB  
+    - Signup or login to your MongoDB account.
+    - Create a new Database called "mother_earth" in [MongoDB Atlas](https://www.mongodb.com/). .
+    - In the "mother_earth" database create the **quiz_rewards** collection.
+        ###### quiz_rewards
+        ```
+        {
+            _id: <ObjectId>,
+            name: <String>,
+            lat: <Decimal>,
+            lng: <Decimal>,
+            score: <Integer32>,
+        }
+3. Create the environment variables 
+    - Create a .gitignore file in the root directory of the project.
+    - Add the env.py file in the .gitignore.
+    - Create the file env.py. This  will contain all the environment variables.
+    ```
+    import os
+    os.environ.setdefault("IP", "Added by developer")
+    os.environ.setdefault("PORT", "Added by developer")
+    os.environ.setdefault("SECRET_KEY", "Added by developer")
+    os.environ.setdefault("MONGO_URI", "Added by developer")
+    os.environ.setdefault("MONGO_DBNAME", "Added by developer")
+    ```
+4. Run the app: Open your terminal window in your IDE. Type python3 app.py and run the app.
+
+#### Heroku Deployment  
+1. Set up local workspace for Heroku 
+    - In terminal window of your IDE type: ```pip3 freeze -- local > requirements.txt.``` (Heroku detects this as a Python app. The reason that they've been able to detect Python is because we have a requirements.txt file)
+
+    - In terminal window of your IDE type: ```echo "python app.py" > Procfile``` (The file is needed for Heroku to know which file is needed as entry point.)
+1. Set up Heroku: create a Heroku account, create a new app and select your region. 
+2. Deployment method 'Github'
+    - Click on the **Connect to GitHub** section in the deploy tab in Heroku. 
+        - Search your repository to connect with it.
+        - When your repository appears click on **connect** to connect your repository with the Heroku. 
+    - Go to the settings app in Heroku and go to **Config Vars**. Click on **Reveal Config Vars**.
+        - Enter the variables contained in your env.py file. it is about: **IP, PORT, SECRET_KEY, MONGO_URI, MONGO_DBNAME**
+3. Push the requirements.txt and Procfile to the repository. 
+     ```
+    $ git add requirements.txt
+    $ git commit -m "Add requirements.txt"
+
+    $ git add Procfile 
+    $ git commit -m "Add Procfile"
+    ```
+4. Automatic deployment: Go to the deploy tab in Heroku and scroll down to **Automatic deployments**. Click on **Enable Automatic Deploys**. By **Manual deploy** click on **Deploy Branch**.
+
+Heroku will receive the code from Github and host the app using the required packages. 
+Click on **Open app** in the right corner of your Heroku account. The app wil open and the live link is available from the address bar. 
+
 
 ### Forking the GitHub Repository
 The repository can be forked on GitHub, this creates a copy of the repository that can be viewed or amended without affecting the original repository. This can be done using the following steps:
@@ -184,7 +260,9 @@ A clone of the repository can be made, which will create a local copy on your ow
 - Icons used are from [Font Awesome](https://fontawesome.com/)
 
 #### Code Content
-
+- Quiz JS and HTML code from [St Patrick's day hackathon.](https://github.com/KeisGSmit/Hackathon)
+- Google maps code from [Astronomy-Friends](https://github.com/emusat2021/Astronomy-Friends)
+- [Stack Overflow](https://stackoverflow.com/)
 
 ### Media
 

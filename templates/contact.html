@@ -1,12 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
+
+
+   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_3HLEpZUiHHbG3FpN991vC");
+        })();
+    </script>
+
 <!--form -->
 
 <section id="contact" class="container-fluid contact-bg">
     
     <div class="p-5">
         <h2 class="text-center contact-heading">Contact Us</h2>
-        
                     <form onsubmit="return sendForm(this);" method="POST" id="form" name="contact-form">
                         <div class="col-12 col-lg-6">
                             <div class="form-group">
@@ -14,7 +23,7 @@
                                 <br />
                                 <div class="input-group">
                                     <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i> </div>
-                                    <input type="text" id="name" placeholder="Enter Your Name" required/>
+                                    <input type="text" id="name" name="name" placeholder="Enter Your Name" required/>
                                 </div>
                             </div>
 
@@ -24,7 +33,7 @@
                                 <div class="input-group">
                                     <div class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"> </i>
                                     </div>
-                                    <input type="email" id="email" placeholder="Enter Your Email" required />
+                                    <input type="email" id="email" name="email" placeholder="Enter Your Email" required />
                                 </div>
                             </div>
                             <p>
@@ -49,16 +58,16 @@
                             </p>
                             <p>
                                 <label for="message" class="form-label">Message</label><br />
-                                <textarea name="message" id="message" class="form-control"
+                                <textarea name="message" id="message" class="form-control"  id="email_body"
+                rows="5"
                                     placeholder="write your message here..." required></textarea>
                             </p>
                             <label>
                                 <input type="checkbox" name="subscribe" checked="checked" /> Sign me up for Mother Earth
                                 Newsletter
                             </label>
-                            <br/>
-                            <button type="submit" class="submit-btn" id="submit-btn" data-toggle="modal"
-                                data-target="#myModal">Submit</button>
+                            <br/>                      
+                              <button type="submit" class="submit-btn" id="submit-btn" data-toggle="modal" data-target="#myModal">Submit</button>
                             </fieldset>
                         </div>
                     </form>
@@ -98,8 +107,14 @@
 
 {% endblock %}
 {% block css %}
-<link rel="stylesheet" href="/static/css/contact.css">
+
+<link rel="stylesheet" href="static/css/contact.css">
+
 {% endblock %}
 {% block scripts %}
-<script src="/static/js/email.js"></script>
+<script src="/static/js/contact.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 {% endblock %}

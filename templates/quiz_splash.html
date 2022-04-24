@@ -13,7 +13,7 @@
         our health, our families, and our livelihoods by preserving her.</p>
       <h3 class="instructions">
         <span class="mr-2">
-          <img src="/static/images/logo.png" width="50" alt="" class="icons"></span>HOW TO PLAY<span><img
+          <img src="/static/images/logo.png" width="50" alt="" class="icons mb-4 mt-4"></span>HOW TO PLAY<span><img
             src="/static/images/logo.png" width="50" alt="four leaf shamrock icon" class="icons">
         </span>
       </h3>
@@ -22,13 +22,16 @@
         <li>Read the question & choose your answer from the four options on the cards</li>
         <li>If you're wrong,<small> Move like jagger....</small><i class="fa fa-smile-o" aria-hidden="true"></i></li>
         <li>Move on to the next.</li>
+        <li>After you finish the quiz, you will have the opportunity to choose a location on Google Maps where you will plant a tree with your name.</li>
       </ul>
       <p>
+
         <small class="text-muted">Good Luck!</small>
       </p>
       <div class="text-center">
         <a class="btn btn-success btn-lg" href="{{ url_for('quiz') }}" role="button">Start</a>
         <a class="btn btn-info btn-lg mr-2" href="{{ url_for('home_page') }}" role="button">Home</a>
+
       </div>
     </div>
   </div>
@@ -43,10 +46,4 @@
 {% endblock %}
 {% block css %}
 <link rel="stylesheet" href="/static/css/quiz.css" type="text/css">
-
-
 {% endblock %}
-{% block js%}
-<script src="/static/js/quiz.js"></script>
-{% endblock %}
-

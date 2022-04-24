@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="plant_tree" class="container">
+    <div class="row">
+        <div class="col-12 resource-container">
+    <span style="font-size: 1.5em;">Places where quiz winners chose to plant their trees</span>
+          <div id="map">MAP</div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="/static/css/maps.css">
+{% endblock %}
+{% block scripts %}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- Google maps API settings -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzHJe9BybHG8wTjPr278K9WvIiq-DP5Nc&callback=initMap">
+</script>
+<script src="static/js/maps.js"></script>
+<script src="static/js/endgame.js"></script>
+{% endblock %}

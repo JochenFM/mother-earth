@@ -262,6 +262,7 @@ legend {
     .submit-btn {
         width: 250px;
     }
+}
     
    
 label {
@@ -280,4 +281,7 @@ label {
 
 .fa-user{
     color:var(--darkgreen);
+}
+.fa-envelope{
+    color:var(--darkgreen)
 }

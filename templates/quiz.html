@@ -1,50 +1,35 @@
 {% extends "base.html" %}
 {% block content %}
 
-<section class="container-fluid" id="quiz_splash">
-  <div class="jumbotron jumbotron">
-    <div class="container card bg-light hover-zoom">
-      <h1 class="display-4">Mother Earth Quiz</h1>
-      <p>Test your Earthy knowledge</p>
-  <div id="quiz">
-  <div class="container">
-    <div id="quiz-stats" class="row text-center">
-      <div class="col-xs-3">
-        <i class="fa fa-bar-chart"></i>
-      </div>
-      <div class="col-xs-3 col-lg-2">
-        <p>Correct Rate</p>
-        <span id="rate-span" class="animated">0/0</span>
-      </div>
-      <div class="col-xs-3 col-lg-2">
-        <p>Correct Streak</p>
-        <span id="streak-span" class="animated">0</span>
-      </div> 
-      <div class="col-xs-3 col-lg-2">
-        <p><span>Avg. </span>Response Time (s)</p>
-        <span id="response-time-span" class="animated">0</span>
-      </div>      
-    </div>    
-  </div>  
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-10 col-md-offset-1 text-center">
-        <p id="quiz-question" class="animated"></p>
-        <div id="quiz-options">
-       <button id="quiz-ans-0" class="btn quiz-ans-btn animated">Gale</button>
-          <button id="quiz-ans-1" class="btn quiz-ans-btn animated">Perkins</button>
-          <button id="quiz-ans-2" class="btn quiz-ans-btn animated">Day</button>
-          <button id="quiz-ans-3" class="btn quiz-ans-btn animated">Parker</button>          
+<section class="container-fluid" id="quiz">
+  <div class="jumbotron">
+  <h1 class="display-4 text-center quiz-header"><img src="/static/images/logo.png"  style="width:70px; opacity: 0.6;" alt="">
+        Mother Earth Quiz<img src="/static/images/logo.png"  style="width:70px; opacity:0.6" alt=""></h1>
+    <div class="container card bg-light h-100">
+      <!-- Main page -->
+        <div class="main">
+          <!-- Number of Question  -->
+          <div class="wrapper" id="pages">
+            <span id="quizNumber">1</span><span>/7</span>
+          </div>
+
+          <!-- Quiz Question -->
+          <div class="quiz-questions" id="display-area">
+            <p id="question"></p>
+            <ul id="answer">
+            </ul>
+
+            <div id="quiz-results">
+              <button type="button" name="button" class="submit" id="submit">Submit</button>
+            </div>
+          </div>
+
         </div>
-        <div id="quiz-play-again">
-          <button id="quiz-play-again-btn" class="btn animated">Play Again</button>
-        </div>
-      </div>
+
+        <canvas id="canvas"></canvas>
+
     </div>
-  </div>
-</div>
     </div>
-  </div>
 </section>
  
 {% endblock %}

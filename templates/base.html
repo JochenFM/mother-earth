@@ -60,15 +60,13 @@
 
         <header>
             <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
                 <div class="container-fluid mr-2 ml-2">
                     <a class="navbar-brand" href="{{ url_for('home_page') }}"><img src="/static/images/logo.png"
                         style="width: 70px;" alt="mother earth logo"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
-
-    
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                       <ul class="navbar-nav mr-auto align-items-center">
                         <li class="nav-item">
@@ -99,7 +97,7 @@
         {% endblock %}
                  
         <!-- section footer -->
-        <footer>
+        <footer class="ft">
             <div class="container-fluid text-center" id="footer">
                 <div class="row">
                     <div class="col-md">
@@ -131,7 +129,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid py-4 bg-footer">
+            <div class="container-fluid py-4 bg-footer sticky-bottom">
                 <div class="row">
                     <div class="col-md-8 col-sm-6 col-xs-12">
                         <p class="copyright-text text-white text-center">Copyright &copy 2022 All Righs Reserved by <i class="fa fa-code-pull-request"></i><a href="{{ url_for('home_page') }}" class="text-warning hvr-pulse">ECOders.</a></p>

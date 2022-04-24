@@ -10,7 +10,7 @@ The team members for this project were: Nigel Doberer, Salwin Achankunju_5P, Yus
 
 ![Mock-up of site](images/readme/amiresponsive.png)
 
-Deployed website can be viewed [here]().
+Deployed website can be viewed [here](http://mother-earth-hackathon.herokuapp.com/).
 
 
 ## Project Goals

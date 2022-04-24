@@ -9,11 +9,54 @@
 
 
 .jumbotron .card {
-    background-color: #faf0c4;
+    background: #faf0c4;
+    margin-top: 75px;
+    margin-bottom: 75px;
 }
 
-.btn {
-    background: #FF6C03; 
+
+.text-center .btn-quiz {
+    width:20rem;
+    background-color: var(--orange);
+    padding: 14px 0;
+    border:none;
+    font-family: var(--ibmplex);
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 8px;
+    text-shadow:0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+    box-shadow:0 0.3rem 0.5rem rgba(5, 161, 70, 0.4);
+    cursor: pointer;
+    margin-top: 7.5px;
+}
+
+.card h1 {
+
+    font-size: 7rem;
+
+}
+
+.card h2 {
+
+    font-size: 5rem;
+
+} 
+
+.card h3 {
+    font-size: 3rem;
+
+}
+
+.howto li {
+
+    font-size: 2rem;
+}
+
+.text-muted {
+    
+    color: var(--darkgreen);
+
 }
 
 .top-game-area {

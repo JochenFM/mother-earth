@@ -7,14 +7,12 @@ By raising self-awareness we can enable peole to reconnect to themselves ,reconn
 a quiz app feature, tree planting donation feature and some extra resources.
 The team members for this project were: Nigel Doberer, Salwin Achankunju_5P, Yusuf F, Jochen Mayer, Eugenia Muscat & Sandra Atino under the guidance of our facilitator, DaveHorrocks_ci.
 
-
 ![Mock-up of site](static/images/motherearthmockup.png)
 
 Deployed website can be viewed [here](http://mother-earth-hackathon.herokuapp.com/).
 
-
 ## Project Goals
-
+  
 
 ## UX Design
 
@@ -35,8 +33,6 @@ Deployed website can be viewed [here](http://mother-earth-hackathon.herokuapp.co
 * **Responsive design** - the site has been developed using Bootstrap and custom CSS to ensure the site is responsive across all devices.
 
 
-
-
 * **Header**
     ![Header](static/images/header.jpg)
     • This section features the logo of the website and when it is clicked the user is navigated back to the home page.
@@ -52,7 +48,7 @@ Deployed website can be viewed [here](http://mother-earth-hackathon.herokuapp.co
 * **Footer**
     ![Footer](static/images/footer.jpg)
     • There are the avatars of the team members and facilitator who have worked towards the development of this website, and they can be connected at their GitHub platform.
-    • There a hover effect on each avatar which pops up the name of the team members.
+    • There a hover effect on each avatar with tooltip pop up displaying names of the team members + our dear facilitator Dave.
     • A copyright statement with team name as ECOders.
     • Social media links to follow the Mother earth website.
 
@@ -62,22 +58,18 @@ Deployed website can be viewed [here](http://mother-earth-hackathon.herokuapp.co
     • The ‘READ MORE’ button navigates the user to an external webpage with more details on Mother Earth.
 
 
-
-
 * **Resources ** - In the resources page there are links to various social earth day links.
     ![Resources page](static/images/resources.png)
-
- about page Gives users a good understanding of why the site exists and what its mission is.
 
 
 * **Contact page** - The user can reach out to the site owner/business for many querries.
     ![Contact page](static/images/contactpage.png)
 * **Quiz page** - The visitors can make a quiz about Earth Day. After they finish the quiz they have the possibility to choose a name and a location on the map for planting their tree.
-    ![Quiz page](static/images/quiz.png)
-
-    ![Score page](static/images/score.png)
+    ![Quiz page splash](static/images/quiz.png)  -A splash screen for the user to read instructions then can click start button to start quiz or home to get back to homepage.
+    ![ quiz page](static/images/Screenshot 2022-04-25 at 14-47-11 Mother Earth.png) - user can start the game
+    ![Score page](static/images/score.png) -displays the scores.
 * **Plant a tree page** - The visitors can see a map with locations where other users planted their trees.
-    ![Plant a tree page](static/images/plant_tree.png)
+    ![Plant a tree page](static/images/plant_tree.png) here a user who wins is rewarded with a gift of planting a tree anywhere in the globe and named after him.
 ### Wireframes
 The wireframes for this project were developed using [Balsamiq](https://balsamiq.com/).
 
@@ -110,17 +102,16 @@ A simple clean design with easy to use buttons handles the navigation throughout
 
 
 ### Images
- * All images used are from pexels ,freepik and are free to used for educational purposes.
- * attributes
+ * All images used are from pexels ,freepik , Canva and are free to used for educational purposes.
+
 
 ### Typography
 
  [Google Fonts](https://fonts.google.com/) was used to select the fonts.
-  * The main font used throughout the site is '---------' which belongs to the sans-serif typeface family. The font is clean and elegant, making it a good choice for web design.
+  * The main font used throughout the site are'ubuntu', 'Abril+Fatface, Ibmplex & Monserrat The font is clean and elegant, making it a good choice for web design.
 
  * We have used the 'Abril + Fatface' font for titles and headers all over the site.
 
- * Sans Serif is set as the fallback font if for any reason the main fonts aren't being imported into the site correctly.
 
 ## Technologies
 ### Backend functionality
@@ -171,23 +162,32 @@ This is done by a JS functionality which obtains data from GET /score API endpoi
 ## Testing
 
 ### [HTML Validator:](https://validator.w3.org/)
+ passed
 
 
 ### [CSS Validator:](https://jigsaw.w3.org/css-validator/)
+passed
 
 
 ### [JSHint:](https://jshint.com/)
+no error
 
 
 ### [Python Syntax Checker PEP8](https://www.pythonchecker.com/)
-
+no error
 
 ### Lighthouse: 
-![Lighthouse]()
+![Home page](static/images/lighthouse_home.png)
+![about page](static/images/lighthouse_about.png)
+![quiz page](static/images/lighthouse_quiz.png)
+![resources page](static/images/lighthouse_resources.png)
+![planttree page](static/images/lighthouse_planttree.png)
+![contact page](static/images/lighthouse_contact.png)
 
 ## Bugs
 • Quiz Page - Body contents and footer overlapping each other for smaller screen size.
 • Contact Page – The Submit button initiates the thank you message popup even with empty text fields. 
+* Not as responsive as we would have liked. question buttons on quiz page have paddding issues
 
 
 ## Deployment
@@ -284,7 +284,7 @@ A clone of the repository can be made, which will create a local copy on your ow
 
 #### Website Content
 - Quiz content from [Earth day quiz](https://questionsgems.com/earth-day-quiz/)
-- Quotes from [david attenborough]()
+- Homepage Quotes from [Vincent Vangoug](https://www.vincentvangogh.org/quotes.jsp)
 - Content regarding ways to save our planet modifed from several websites
     
 #### Fonts
@@ -292,7 +292,7 @@ A clone of the repository can be made, which will create a local copy on your ow
 - Icons used are from [Font Awesome](https://fontawesome.com/)
 
 #### Code Content
-- Quiz JS and HTML code from [St Patrick's day hackathon.](https://github.com/KeisGSmit/Hackathon)
+- Quiz JS and HTML code from [St Patrick's day hackathon.](https://github.com/KeisGSmit/Hackathon) 
 - Google maps code from [Astronomy-Friends](https://github.com/emusat2021/Astronomy-Friends)
 - [Stack Overflow](https://stackoverflow.com/)
 
@@ -301,9 +301,10 @@ A clone of the repository can be made, which will create a local copy on your ow
 #### Images
 * Hero image used from [Pexels](https://www.pexels.com/@rostislav/)
 * importance of tree planting  30s video from[youtube](https://www.youtube.com/watch?v=qY8EfttB6As)
-* Logo and banner designed using: [freepik](https://www.freepik.com/search?format=search&query=animatedtoilet&type=vector)
+* some images from: [freepik](https://www.freepik.com/search?format=search&query=animatedtoilet&type=vector)
 * Hackathon banner designed & modified  from[canva](https://www.canva.com/)
-* Images of------ in the ----- section are from google Commons
+*  background logo images in contact ,quiz splash screen and quiz are from [Canva](https://www.canva.com)
+* Images gif in the resource section are from google Commons
 * Illustrations from [UnDraw](https://undraw.co/illustrations)
 
 

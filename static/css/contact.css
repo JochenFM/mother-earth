@@ -116,16 +116,33 @@ border: none;
 border-radius: 0 5px 5px 0;
 }
 textarea {
-    
     font-family: var(--ibmplex);
+    font-style: italic;
+    line-height: 4rem;
+    font-size: 5rem;
     padding: 0 8px;
+    resize: none;
+    letter-spacing: 0.2rem;
+    color: var(--dark);
+    
 }
 
 textarea:focus,
 input:focus {
     border: 2px solid green;
 }
+input [type=text],
+input [type=email] {
+    font-family: var(--montserrat);
+    font-size: 2rem;
+    color: #FF6C03;
 
+} 
+textarea #message{
+    font-family: var(--montserrat);
+    font-size: 3rem;
+    color: #1C3A13;
+}
 label {
     text-align: center;
 }

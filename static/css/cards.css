@@ -1,17 +1,34 @@
 /* -- Card Game CSS -- */
-
+body{
+    font-family: var(--ibmplex);
+   
+}
+.card-bg{
+ background-color: var(--darkgreen); 
+   background-image: url('/static/images/cardbg1.png');
+   background-repeat: no-repeat;
+   background-position: center;
+   clip-path: polygon(0 0, 100% 0, 100% 96%, 54% 100%, 50% 100%, 0 95%);
+    position: relative;
+    width: 100%;
+    padding-bottom: 50px;
+    width:100%;
+    margin-top: 6rem!important;
+}
 .question-card {
+     background-color: #fff;
+    background-image: linear-gradient(315deg, #fafafa 0%, #e4fce1 74%);
     background-color: transparent;
     border-radius: 8px;
     width: 540px;
-    height: 670px;
+    height: 650px;
     margin-left: auto;
-    margin-right: auto; 
-    perspective: 1000;
-    position: relative;
-  }
+   margin-right: auto;
+   perspective: 1000;
+   position: relative;
+}
   
-  .question-card-inner {
+.question-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -19,7 +36,7 @@
     transition: 0.6s;
     transform-origin: 50% 50%;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(69, 235, 9, 0.2);
   }
   
   .question-card.flipped .question-card-inner {
@@ -41,8 +58,10 @@
   
   .question-card-back {
     transform: rotateY(180deg);
-    background-color: #f5a818;
+    background-image: linear-gradient(315deg, #fafafa 0%, #e4fce1 74%);
+    box-shadow: 0 0 20px 2px #201d1d;
     border-radius: 8px;
+    padding: 7rem;
   }
   
   .question-card-front-image {
@@ -79,12 +98,15 @@
   }
   
   .btn.wrong {
-      background-color: #ff0000;
+      background-color: rgb(190, 2, 2);
       color: #f1f1f1ce;
+      border: 1px solid rgb(190, 2, 2);
   }
   
   .btn.correct {
-      background-color: #7AB648;
+      background-color: darkgreen;
+      border: 1px solid darkgreen;
+      color: white;
   }
   
   /* .question-card-front.side {
@@ -106,10 +128,120 @@
   
   .drinks-count,
   #drinks-score {
-      color: #e64101;
+      color: rgb(240, 23, 23);
+      font-family: var(--ibmplex);
   }
-  
+  .answer-count{
+      color:white;
+  }
   .counter-container {
       background-color: #fafafa;
   }
   
+
+    /*media queries*/
+@media (max-width: 1025px){
+
+  .question-card-back {
+      margin: auto auto;
+      position: relative;
+      max-width: 100%;
+      height: auto;
+  }
+}
+@media (max-width: 541px){
+    
+  .question-card-back {
+      margin: auto auto;
+      position: relative;
+      max-width: 45%;
+      height: auto;
+  }
+}
+@media (max-width: 415px){
+    
+  .question-card-back {
+      margin: auto auto;
+      position: relative;
+      max-width: 45%;
+      height: auto;
+      left: 60px;
+  }
+}
+
+@media (max-width: 376px){
+ 
+  .question-card-back {
+      margin: auto auto;
+      position: relative;
+      max-width: 45%;
+      height: auto;
+      left: 100px;
+  }
+}
+@media (max-width: 360px){
+
+  .question-card-back {
+      margin: auto auto;
+      position: relative;
+      max-width: 45%;
+      height: auto;
+      left: 110px;
+  }
+  .question-container{
+      max-width: 360px;
+  }
+}
+
+@media (max-width: 320px){
+  
+    .question-card-back {
+      margin: auto auto;
+      position: relative;
+      max-width: 45%;
+      height: auto;
+      left: 110px;
+  }
+}
+@media (max-width: 281px){
+ 
+    .question-card-back {
+      margin: auto auto;
+      position: relative;
+      max-width: 25%;
+      height: auto;
+      text-align: center;
+      margin-right: 150px;
+  }
+}
+
+@media (min-width: 321px) {
+  html {
+    font-size: calc(10px + 6 * ((100vw - 320px) / 680));
+  
+}
+@media (min-width: 1000px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width:768px){
+    
+    h1 {
+        font-size: 1.7rem;
+        font-weight: 900;
+        line-height: 1.5rem;
+        letter-spacing: 0.01rem;
+    
+
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        font-weight: 900;
+        line-height: 1.5rem;
+        letter-spacing: 0.01rem;
+    }
+
+}

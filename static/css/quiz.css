@@ -5,23 +5,21 @@
     font-weight: 600;
     letter-spacing: 0.4rem;
 }
-
 .quiz-bg{
-    margin-top: 6rem;
-    background-image: url('/static/images/crystal-globe-resting.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    opacity: 0.8;
-    height: 100vh;
-
+  background-color: var(--darkgreen); 
+   background-image: url('/static/images/quizbg.png');
+   background-repeat: no-repeat;
+   background-position: center;
+   clip-path: polygon(0 0, 100% 0, 100% 96%, 54% 100%, 50% 100%, 0 95%);
+    position: relative;
     width: 100%;
-   
-  
+    padding-bottom: 50px;
+    width:100%;
+    height:auto;
+    margin-top: 6rem!important;
 }
 .text-shadow {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-
 }
 
 .jumbotron{
@@ -36,6 +34,7 @@
     font-weight: 400;
     line-height: 150%;
     padding:5rem;
+    border-radius: 10px;
     /* box-shadow: 5px 5px 8px 0 #333; */
     margin-top: 5rem;
     box-shadow:
@@ -135,7 +134,6 @@ ul,p {
     background-color: #fafafa;
 }
 
-
 @media (min-width: 321px) {
   html {
     font-size: calc(10px + 6 * ((100vw - 320px) / 680));
@@ -147,13 +145,13 @@ ul,p {
 }
 @media (min-width: 1000px) {
   html {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 
 @media (max-width:768px){
     .jumbotron {
-        max-width: 80%;
+        max-width: 70%;
        
     }
 
@@ -161,12 +159,38 @@ ul,p {
         width: 20px;
     }
     
+}
+@media (min-width: 321px) {
+  html {
+    font-size: calc(10px + 6 * ((100vw - 320px) / 680));
+ 
+  }
+
+  .instructions{
+      font-size: 12px;
+      font-weight: bold;
+  }
+  .jumbotron {
+      min-width: 55%;
+  }  
+}
+@media (min-width: 1000px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+
+
+@media (max-width:768px){
+    
+    
     h1 {
         font-size: 1.7rem;
         font-weight: 900;
         line-height: 1.5rem;
         letter-spacing: 0.01rem;
-        color: var(--white);
+        color: var(--dark);
         text-shadow:
   0 2.8px 2.2px rgba(0, 0, 0, 0.034),
   0 6.7px 5.3px rgba(0, 0, 0, 0.048),

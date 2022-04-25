@@ -2,7 +2,7 @@
 {% block content %}
 
         <!-- section quiz -->
-        <section id="resources" class="container">
+        <section id="resources" class="container-fluid card-bg">
          <div class="row">
              <div class="col-12 resource-container">
                  <h2 class="answer-count d-inline p-2">Correct answers: <span id="answers-score">0</span></h2> 
@@ -16,23 +16,24 @@
                  <div class="question-card" id="question-card">
                      <div class="question-card-inner">
                          <div class="question-card-front">
-                             <img class="question-card-front-image" src="assets/images/cardback.png" alt="Card Back">
+                             <img class="question-card-front-image" src="" alt="Card Back">
                          </div>
                          <div class="question-card-back">
-                             <h1>Question</h1>
+                             <h1> Question</h1>
                              <div id="question-container">
                                  <div id="question" class="question-words">Press the Start Button for the questions to
                                      appear
                                  </div>
                                  <div id="answer-buttons" class="btn-grid"></div>
                              </div>
-                             <button id="next-btn" class="next-btn btn hide btn-success">Next <i class="far fa-hand-point-right"></i></button>
+                             <button id="next-btn" class="next-btn hide btn-success">Next <i class="far fa-hand-point-right"></i></button>
                              <a href="{{ url_for('score') }}"><button id="END-btn" class="next-btn btn hide btn-danger">END</button></a>
                          </div>
                      </div>
                  </div>
              </div>
         </div>
+        
     </section>
         <!-- end of section quiz /-->
 <!-- script tags -->

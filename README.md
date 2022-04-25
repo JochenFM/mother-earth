@@ -35,10 +35,40 @@ Deployed website can be viewed [here](http://mother-earth-hackathon.herokuapp.co
 * **Responsive design** - the site has been developed using Bootstrap and custom CSS to ensure the site is responsive across all devices.
 
 
+
+
+* **Header**
+    ![Header](static/images/header.jpg)
+    • This section features the logo of the website and when it is clicked the user is navigated back to the home page.
+    • It displays the navigation bar with list elements i.e., Home, About, Quiz, Plant a tree, Resources and Contact.
+    • Hover effect at navigation elements gives a good user interaction experience with a bold blue underlining feature.
+
+
+* **Landing Page**
+    ![Landing page](static/images/landing-page.jpeg)
+    • The image and the content give a clear message to the user to think about how beautiful our nature is, and we could we lose all for worse if we don’t take care of it.
+    • The ‘EXPLORE MORE’ button navigates the user to the About page.
+
+* **Footer**
+    ![Footer](static/images/footer.jpg)
+    • There are the avatars of the team members and facilitator who have worked towards the development of this website, and they can be connected at their GitHub platform.
+    • There a hover effect on each avatar which pops up the name of the team members.
+    • A copyright statement with team name as ECOders.
+    • Social media links to follow the Mother earth website.
+
+* **About Page**
+    ![About Page](static/images/about-page.jpeg)
+    • This page gives the user a short details o the Earth Day and a fun fact about Mother Earth through a short video and text content.
+    • The ‘READ MORE’ button navigates the user to an external webpage with more details on Mother Earth.
+
+
+
+
 * **Resources ** - In the resources page there are links to various social earth day links.
     ![Resources page](static/images/resources.png)
 
  about page Gives users a good understanding of why the site exists and what its mission is.
+
 
 * **Contact page** - The user can reach out to the site owner/business for many querries.
     ![Contact page](static/images/contactpage.png)
@@ -156,6 +186,8 @@ This is done by a JS functionality which obtains data from GET /score API endpoi
 ![Lighthouse]()
 
 ## Bugs
+• Quiz Page - Body contents and footer overlapping each other for smaller screen size.
+• Contact Page – The Submit button initiates the thank you message popup even with empty text fields. 
 
 
 ## Deployment

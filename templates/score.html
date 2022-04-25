@@ -1,23 +1,30 @@
 {% extends "base.html" %}
 {% block content %}
-<section class="top-game-area">
-    <div class="game-area" id="final-page">
-        <h1 class="heading" id="final-heading">Your Score is!</h1>
-        <h2 id="finalScore">0</h2>
-        <p class="rank"> 1-5 : In pilot School</p>
-        <p class="rank"> 6-8 : 1st Officer</p>
-        <p class="rank"> 9-10 : High Ranked Commander</p>
-        <form>
-            <input type="text" name="username" id="username" placeholder="username">
-        </form>
-        <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>Save</button>
-        <button type="button" onclick="window.location.href='/'" class="btn" id="start">Go Home</button>
-    </div>
+<section id="score" class="container">
+        <div class="row">
+            <div class="col col-4 resource-container">
+                <span style="size: 2em;">Please fill the name of your tree and click on the map to choose your location where you will plant your tree.</span>
+                <br>
+                <br>
+                <br>
+                <input type="text" name="tree_name" id="tree_name" placeholder="Tree name">
+                <br>
+                <button type="submit" class="" id="saveScoreBtn" onclick="sendDataToServer(event)">Send</button>
+            </div>
+            <div class="col col-8 resource-container">
+                <div id="map">MAP</div>         
+            </div>
+        </div>
 </section>
 {% endblock %}
 {% block css %}
-<link rel="stylesheet" href="/static/css/quiz.css">
+<link rel="stylesheet" href="/static/css/maps.css">
 {% endblock %}
 {% block scripts %}
-<script src="/static/js/highscores.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- Google maps API settings -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzHJe9BybHG8wTjPr278K9WvIiq-DP5Nc&callback=initMapCreate">
+</script>
+<script src="static/js/maps.js"></script>
+<script src="static/js/endgame.js"></script>
 {% endblock %}
